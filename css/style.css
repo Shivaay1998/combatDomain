@@ -8,20 +8,26 @@
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     overflow: hidden;
     background-color: #000;
+    position: relative;
 }
 
 .left {
     height: 100%;
     width: 50%;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
 }
 
 .left img {
-    width: 100%;
+    width: 93%;
     height: 100%;
 }
 .img2{
@@ -31,19 +37,21 @@
 .right {
     width: 50%;
     height: 100%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow-y: scroll;
+    position: absolute;
+    right: 0;
 }
 
 .right_box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 84vh;
-    margin-bottom: 10vh;
+    margin-bottom: 15%;
     width: 74%;
 }
 
@@ -88,6 +96,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+    margin: 10px 0;
     justify-content: center;
 }
 #headings{
@@ -97,6 +106,9 @@
 .line span {
     font-size: 1.5rem;
     font-family: 'Inter', sans-serif;
+}
+.city, .country{
+    width: 100%;
 }
 
 form {
@@ -283,6 +295,16 @@ input[type="radio"] {
     cursor: pointer;
     width: 100%;
 }
+.hide{
+    color: red;
+    margin: 20px 0;
+}
+@media (max-width:1300px) {
+    .left img {
+        width: 100%;
+        height: 100%;
+    }
+}
 
 @media (max-width:1120px) {
     .links {
@@ -307,18 +329,25 @@ input[type="radio"] {
     }
 
     .left {
-        width: 56%;
+        width: 50%;
     }
     .right_box {
         width: 95%;
+    }
+    .left img {
+        width: 100%;
+        height: 88%;
     }
 }
 
 @media (max-width:930px) {
     .left {
-        width: 66%;
+        width: 60%;
         display: flex;
         align-items: center;
+    }
+    .right {
+        width: 40%;
     }
 
     .left img {
@@ -351,18 +380,18 @@ input[type="radio"] {
         font-size: .9rem;
     }
     .right_box {
-        margin-top: 95vh;
         margin-bottom: 10vh;
         width: 86%;
     } 
     .signUp_btn span {
         font-size: .9rem;
     }
-    .links button:nth-child(1) {
-        flex-direction: column;
-    }
     .one, .two, .three,.four{
         display: none;
+    }
+    .left img {
+        width: 100%;
+        height: 81%;
     }
 
 }
@@ -396,13 +425,8 @@ input[type="radio"] {
 }
 @media (max-width:770px) {
     .container {
+        overflow: scroll;
         flex-direction: column;
-    }
-    .img1{
-        display: none;
-    }
-    .img2{
-        display: block;
     }
     .left {
         width: 100%;
@@ -412,14 +436,11 @@ input[type="radio"] {
     .right {
         width: 100%;
     }
-    .right_box {
-        margin-top: 129vh;
-    }
     .left {
-        height: 64%;
+        height: 100%;
     }
     .left img {
-        height: 100%;
+        width: 55%;
     }
     .line {
         font-size: 4rem;
@@ -445,6 +466,9 @@ input[type="radio"] {
     .one, .two, .three,.four{
         display: block;
     }
+    .left, .right{
+        position: static;
+    }
 }
 @media (max-width:600px) {
     .links {
@@ -457,10 +481,6 @@ input[type="radio"] {
         width: 140px;
         margin: 10px 0;
     }
-    .right_box {
-        margin-top: 114vh;
-    }
-
     .line {
         font-size: 3rem;
     }
@@ -469,9 +489,6 @@ input[type="radio"] {
     }
 }
 @media (max-width:520px) {
-    .right_box {
-        margin-top: 111vh;
-    }
     .one, .two{
         display: none;
     }
@@ -479,9 +496,6 @@ input[type="radio"] {
 @media (max-width:460px){
     .left {
         height: 41%;
-    }
-    .right_box {
-        margin-top: 111vh;
     }
     .dropzone {
         width: 115px;
@@ -491,9 +505,6 @@ input[type="radio"] {
     .line {
         font-size: 2.2rem;
     }
-    .right_box {
-        margin-top: 105vh;
-    }
     .one, .two, .three,.four{
         display: none;
     }
@@ -501,9 +512,5 @@ input[type="radio"] {
 @media (max-width:400px) {
     .left {
         height: 28%;
-    }
-    .right_box {
-        margin-top: 82%;
-        
     }
 }
