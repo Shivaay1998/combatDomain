@@ -87,9 +87,12 @@
     font-size: 4rem;
     display: flex;
     align-items: center;
-    gap: 30px;
     width: 100%;
     justify-content: center;
+    background-color: red;
+}
+#headings{
+    margin: 0 8px;
 }
 
 .line span {
@@ -289,7 +292,7 @@ input[type="radio"] {
 
     .line {
         font-size: 3.5rem;
-        gap: 9px;
+        width: 68%;
     }
 
     .line span {
@@ -358,6 +361,9 @@ input[type="radio"] {
     }
     .links button:nth-child(1) {
         flex-direction: column;
+    }
+    .one, .two, .three,.four{
+        display: none;
     }
 
 }
@@ -437,6 +443,9 @@ input[type="radio"] {
     .city, .country{
         width: 100%;
     }
+    .one, .two, .three,.four{
+        display: block;
+    }
 }
 @media (max-width:600px) {
     .links {
@@ -452,7 +461,7 @@ input[type="radio"] {
     .right_box {
         margin-top: 114vh;
     }
-    
+
     .line {
         font-size: 3rem;
     }
@@ -464,16 +473,17 @@ input[type="radio"] {
     .right_box {
         margin-top: 111vh;
     }
-}
-@media (max-width:460px) {
-        .left {
-            height: 41%;
-        }
-        .right_box {
-            margin-top: 111vh;
-        }
+    .one, .two{
+        display: none;
+    }
 }
 @media (max-width:460px){
+    .left {
+        height: 41%;
+    }
+    .right_box {
+        margin-top: 111vh;
+    }
     .dropzone {
         width: 115px;
         height: 134px;
@@ -484,6 +494,9 @@ input[type="radio"] {
     }
     .right_box {
         margin-top: 105vh;
+    }
+    .one, .two, .three,.four{
+        display: none;
     }
 }
 @media (max-width:400px) {
