@@ -11,232 +11,60 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="left">
             <img src="imgs/main.png" alt="" class="img1">
             <!-- <img src="imgs/main1.png" alt="" class="img2"> -->
         </div>
-        <div class="right">
-            <div class="right_box">
-                <div class="links">
-                    <button><i class='bx bxl-google'></i> <span>Sign up with Google</span></button>
-                    <button><i class='bx bxl-facebook-square'></i></button>
-                    <button><i class='bx bxl-twitter'></i></button>
-                </div>
-                <div class="line">
-                    <span class="one">&#9135</span>
-                    <span class="two">&#9135</span>
-                    <span class="three">&#9135</span>
-                    <span class="four">&#9135</span>
-                    <span class="five">&#9135</span>
-                    <span class="six">&#9135</span>
-                    <span class="seven">&#9135</span>
-                    <span class="eight">&#9135</span>
-                    <span class="nine">&#9135</span>
-                    <span class="ten">&#9135</span>
-                    <span id="headings">Or</span>
-                    <span class="one">&#9135</span>
-                    <span class="two">&#9135</span>
-                    <span class="three">&#9135</span>
-                    <span class="four">&#9135</span>
-                    <span class="five">&#9135</span>
-                    <span class="six">&#9135</span> 
-                    <span class="seven">&#9135</span> 
-                    <span class="eight">&#9135</span> 
-                    <span class="nine">&#9135</span> 
-                    <span class="ten">&#9135</span> 
-                </div>
-                <form action="" name = "myForm" onsubmit = "return(validate());">
-                    <div class="first_input">
-                        <div class="first_left">
-                            <div class="input">
-                                <label for="">First Name</label><br>
-                                <input name="fname" type="text"><br>
-                                <span class="hide" id="fname"></span>
-                            </div>
-                            <div class="input">
-                                <label for="">Last Name</label><br>
-                                <input name="lname" type="text"><br>
-                                <span class="hide" id="lname"></span>
-                            </div>
-                        </div>
-                        <div class="first_right">
-                            <div class="input upload_image">
-                                <label for="">Profile Image</label>
-                                <div class="dropzone">
-                                    <!-- <i class='bx bx-plus-circle'></i> -->
-                                    <input type="file" name="phn" class="upload-input" />
-                                </div>
-                                <span class="hide" id="phn"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input">
-                        <label for=""> Email Id</label><br>
-                        <input type="email" name="" id="">
-                        <span class="hide" id="mail"></span>
-                    </div>
-                    <div class="input">
-                        <label for="">Contact Number</label><br>
-                        <input type="tel" name="" id="">
-                        <span class="hide" id="tel"></span>
-                    </div>
-                    <div class="input">
-                        <label for="">Date of Birth</label><br>
-                        <div class="dateTime">
-                            <div class="select">
-                                <select id="select_day">
-                                    <option>Day</option>
-                                </select>
-                            </div>
-                            <div class="select">
-                                <select id="select_month">
-                                    <option>Month</option>
-                                </select>
-                            </div>
-                            <div class="select">
-                                <select id="select_year">
-                                    <option>Year</option>
-                                </select>
-                            </div>
-                        </div>
-                        <span class="hide" id="dob"></span>
-                    </div>
-                    <div class="input radio">
-                        <label for="">Gender</label>
-                        <div class="radios">
-                            <div class="radios_box">
-                                <label for="male">Male</label>
-                                <input type="radio" name="gender" id="male">
-                            </div>
-                            <div class="radios_box">
-                                <label for="female">Female</label>
-                                <input type="radio" name="gender" id="female">
-                            </div>
-                            <div class="radios_box">
-                                <label for="other">Other</label>
-                                <input type="radio" name="gender" id="other">
-                            </div>
-                        </div>
-                        <span class="hide" id="gender"></span>
-                    </div>
-                    <div class="input">
-                        <label for="">What city are you from?</label>
-                        <div class="areas">
-                            <div class="city">
-                                <input type="text" name="" id="" placeholder="City">
-                                <span class="hide" id="city"></span>
-                            </div>
-                            <div class="country">
-                                <input type="text" name="" id="" placeholder="Country">
-                                <span class="hide" id="country"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input upload_img">
-                        <label for="">Upload Identification (Drivers License or Passport)</label><br>
-                        <label for="hiddenBtn" class="choose-btn" id="chooseBtn">Click To Upload</label><br>
-                        <input type="file" id="hiddenBtn"><br>
-                        <span class="hide" id="img1"></span>
-                    </div>
-                    <div class="input">
-                        <label for="">Create Password</label>
-                        <input type="password" name="" id="">
-                        <span class="hide" id="pass1"></span>
-                    </div>
-                    <div class="input">
-                        <label for="">Confirm Password</label>
-                        <input type="password" name="" id="">
-                        <span class="hide" id="pass2"></span>
-                    </div>
-                    <input type="submit" value="Next" id="submit_btn">
 
-                </form>
+        <div class="right right_section" id="right_section">
+            <div class="right_box">
+                <div class="select_box">
+                    <h2>What is your role?</h2>
+                    <div class="select select_option">
+                        <select id="list" onchange="valueChange()">
+                            <option value="" disabled selected id="disable_option">Select your role</option>
+                            <option value="promoter">Promoter</option>
+                            <option value="medics">Medics</option>
+                            <option value="fighter" id="fighter">Fighter</option>
+                            <option value="sanctioning">Sanctioning</option>
+                            <option value="owner">GYM Owner</option>
+                            <option value="coach">Coach/Trainer</option>
+                        </select>
+                    </div>
+                    <button id="next_btn" onclick="clickFunc()">Next</button>
+                </div>
                 <div class="signUp_btn">
                     <span>Already Register ? <a href="">Sign up Now</a></span>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
-        integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        /* :: DATE PICKER
- ------------------------------------------------ */
-
-        // :: DAY
-        var $select_day = $("#select_day");
-        for (var i = 1; i < 32; i++) {
-            var day_number = i;
-            $('<option>')
-                .val(('0' + day_number).slice(-2))   // set the value
-                .text(i)    // set the text in in the <option>
-                .appendTo($select_day);
-        }
-
-
-        // :: MONTH
-        var $select_month = $("#select_month");
-        var options = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        for (var i = 0; i < options.length; i++) {
-            var month_number = i + 1;
-            $('<option>')
-                .val(('0' + month_number).slice(-2))          // set the value
-                .text(options[i])    // set the text in in the <option>
-                .appendTo($select_month);
-        }
-
-
-        // :: YEAR
-        var $select_year = $("#select_year");
-
-        // Get the current year
-        var year = new Date().getFullYear();
-        var $select_year = $('#select_year').empty();
-
-        for (var i = 0; i < 99; i++) {
-            $('<option>')
-                .val(year - i)     // set the value
-                .text(year - i)    // set the text in in the <option>
-                .appendTo($select_year);
-        }
-        fname = document.getElementById("fname")
-        lname = document.getElementById("lname")
-        phn = document.getElementById("phn")
-        mail = document.getElementById("mail")
-        tel = document.getElementById("tel")
-        dob = document.getElementById("dob")
-        gender = document.getElementById("gender")
-        city = document.getElementById("city")
-        country = document.getElementById("country")
-        img1 = document.getElementById("img1")
-        pass1 = document.getElementById("pass1")
-        pass2 = document.getElementById("pass2")
-        function validate(){
-            if(document.myForm.fname.value == ""){
-                fname.innerHTML = "Please enter your first name*"
-                return false;
+        function clickFunc() {
+            const xhr = new XMLHttpRequest();
+            const container = document.getElementById("container");
+            const list  = document.getElementById("list");
+            xhr.onreadystatechange = function () {
+                if (this.status === 200) {
+                    container.innerHTML = xhr.responseText;
+                    if(list.value == fighter){
+                        console.log("pajji apki js chal gyi hai");
+                    }
+                    else{
+                        console.log("lele thenga");
+                    }
+                }
+                else {
+                    console.warn('Did not recieve 200 OK from response!')
+                }
             }
-            if(!isNaN(fname)){
-                fname.innerHTML = "Name should be in Character*"
-                return false;
-            }
-            if(document.myForm.lname.value == ""){
-                lname.innerHTML = "Please enter your last name*"
-                return false;
-            }
-            if(!isNaN(lname)){
-                lname.innerHTML = "Name should be in Character*"
-                return false;
-            }
-            if(document.myForm.phn.value == ""){
-                phn.innerHTML = "Please upload your profile photo*"
-                return false;
-            }
-        }
-
+            xhr.open('get', 'register.html');
+            xhr.send();
+        };
+         function valueChange(){
+            console.log(list);
+         }
 
     </script>
 </body>
