@@ -82,13 +82,20 @@
     padding: 15px !important;
     font-size: 1rem;
 }
-.select_box button{
+.next_btn{
     border-radius: 6px;
     width: 100%;
     background-color: #222222;
     padding: 15px;
     color: #C99819;
     font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+a#changePage {
+    width: 100%;
+    margin-top: 10px;
 }
 
 /* for register page */

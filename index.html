@@ -21,18 +21,21 @@
             <div class="right_box">
                 <div class="select_box">
                     <h2>What is your role?</h2>
-                    <div class="select select_option">
-                        <select id="list" onchange="valueChange()">
-                            <option value="" disabled selected id="disable_option">Select your role</option>
-                            <option value="promoter">Promoter</option>
-                            <option value="medics">Medics</option>
-                            <option value="fighter" id="fighter">Fighter</option>
-                            <option value="sanctioning">Sanctioning</option>
-                            <option value="owner">GYM Owner</option>
-                            <option value="coach">Coach/Trainer</option>
-                        </select>
-                    </div>
-                    <button id="next_btn" onclick="clickFunc()">Next</button>
+                    <form action="">
+
+                        <div class="select select_option">
+                            <select id="list" class="list" required>
+                                <option value="" disabled selected  id="disable_option">Select your role</option>
+                                <option value="promoter">Promoter</option>
+                                <option value="medics">Medics</option>
+                                <option value="fighter" id="fighter">Fighter</option>
+                                <option value="sanctioning">Sanctioning</option>
+                                <option value="owner">GYM Owner</option>
+                                <option value="coach">Coach/Trainer</option>
+                            </select>
+                        </div>
+                        <a href="" id="changePage"><button id="next_btn" class="next_btn">Next</button></a>
+                    </form>
                 </div>
                 <div class="signUp_btn">
                     <span>Already Register ? <a href="">Sign up Now</a></span>
@@ -40,33 +43,10 @@
             </div>
         </div>
     </div>
-    <script>
-        function clickFunc() {
-            const xhr = new XMLHttpRequest();
-            const container = document.getElementById("container");
-            const list  = document.getElementById("list");
-            xhr.onreadystatechange = function () {
-                if (this.status === 200) {
-                    container.innerHTML = xhr.responseText;
-                    if(list.value == fighter){
-                        console.log("pajji apki js chal gyi hai");
-                    }
-                    else{
-                        console.log("lele thenga");
-                    }
-                }
-                else {
-                    console.warn('Did not recieve 200 OK from response!')
-                }
-            }
-            xhr.open('get', 'register.html');
-            xhr.send();
-        };
-         function valueChange(){
-            console.log(list);
-         }
-
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+        integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
