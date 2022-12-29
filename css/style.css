@@ -56,6 +56,9 @@
     margin-bottom: 15%;
     width: 74%;
 }
+.additional_right_box {
+    margin-bottom: 11%;
+}
 .right_section{
     overflow: auto;
 }
@@ -64,9 +67,14 @@
 
 .select_box{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .right_section{
   justify-content: center;
+  margin-top: 3%;
 }
 .select_box h2{
   font-family: 'Inter', sans-serif;
@@ -96,6 +104,11 @@
 a#changePage {
     width: 100%;
     margin-top: 10px;
+}
+@media (max-width:1111px) {
+    .select_box h2 {
+        width: 88%;
+    }
 }
 
 /* for register page */
@@ -152,7 +165,7 @@ a#changePage {
     font-size: 1.5rem;
     font-family: 'Inter', sans-serif;
 }
-.city, .country{
+.city, .town{
     width: 100%;
 }
 
@@ -384,16 +397,15 @@ input[type="radio"] {
 
 @media (max-width:930px) {
     .left {
-        width: 60%;
+        width: 53%;
         display: flex;
         align-items: center;
     }
-    .right {
-        width: 40%;
-    }
-
     .left img {
-        height: 83%;
+        height: 66%;
+    }
+    .right {
+        width: 47%;
     }
     .links {
         width: 100%;
@@ -433,7 +445,7 @@ input[type="radio"] {
     }
     .left img {
         width: 100%;
-        height: 81%;
+        height: 66%;
     }
 
 }
@@ -456,9 +468,6 @@ input[type="radio"] {
     }
     .select select {
         padding: 9px 6px;
-    }
-    .left img {
-        height: 73%;
     }
     .dropzone {
         width: 131px;
@@ -502,7 +511,7 @@ input[type="radio"] {
         margin: 10px 0;
         border-radius: 5px;
     }
-    .city, .country{
+    .city, .town{
         width: 100%;
     }
     .one, .two, .three,.four{
@@ -556,6 +565,14 @@ input[type="radio"] {
         height: 28%;
     }
 }
+@media (max-width: 370px){
+    .dropzone {
+        height: 140px;
+    }
+    .first_left {
+        width: 58%;
+    }
+}
 
 
 /* ************Register second************* */
@@ -565,6 +582,7 @@ input[type="radio"] {
     margin-bottom: 10px;
     font-size: 1.4rem;
     text-decoration: underline;
+    width: 100%;
 }
 .for_weight{
     display: flex;
@@ -600,4 +618,14 @@ input[type="radio"] {
 }
 .radios_btn label a{
     color: #C99819;
+}
+@media (max-width:1120px) {
+    #heading_one {
+        width: 88%;
+    }
+}
+@media (max-width:910px) {
+    .additional_right_box {
+        overflow: scroll;
+    }
 }
