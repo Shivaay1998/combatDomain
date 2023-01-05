@@ -30,9 +30,9 @@
                             <div class="for_weight">
                                 <input type="text" name="" id="" placeholder="00.000">
                                 <div class="inside_weight">
-                                    <select name="" id="">
-                                        <option value="">Kg</option>
-                                        <option value="">Lbs</option>
+                                    <select name="" id="weight">
+                                        <option value="kg" id="kg">Kg</option>
+                                        <option value="lbs" id="lbs">Lbs</option>
                                     </select>
                                 </div>
                             </div>
@@ -43,8 +43,8 @@
                                 <input type="text" name="" id="" placeholder="00.00">
                                 <div class="inside_weight">
                                     <select name="" id="">
-                                        <option value="">Feet</option>
-                                        <option value="">Cm</option>
+                                        <option value="ft" id="ft">Feet</option>
+                                        <option value="cm" id="cm">Cm</option>
                                     </select>
                                 </div>
                             </div>
@@ -72,6 +72,23 @@
             </div>
         </div>
     </div>
+    <script>
+        function selectfunc(){
+            var weight = document.getElementById('weight')
+            var kg = document.getElementById('kg')
+            var lbs = document.getElementById('lbs')
+            // var ft = document.getElementById('ft')
+            // var cm = document.getElementById('cm')
+
+            
+            if(weight.value == kg){
+                console.log("hmmmmmm");
+            }
+            else if(weight.value == lbs){
+                console.log('lbs');
+            }
+        }
+    </script>
 </body>
 
 </html>

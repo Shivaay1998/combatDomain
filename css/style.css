@@ -80,6 +80,7 @@
   font-family: 'Inter', sans-serif;
   color: #fff;
   font-size: 1.25rem;
+  width: 100%;
 }
 #selectValue{
     color: red;
@@ -632,3 +633,156 @@ input[type="radio"] {
         overflow: scroll;
     }
 }
+
+/* ******************************REGISTER PAGE END********************************* */
+/* ******************************PROFILE PAGE START********************************* */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 40px;
+    background-color: #000;
+    color: #fff;
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-bottom: .5px solid #C99819;
+}
+
+.logo img{
+    width: 273px;
+}
+.edit-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#complete-profile, #edit-profile, #logout{
+    background-color: #B42025;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 7px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+#edit-profile{
+    background-color: #C99819;
+}
+#logout{
+    background-color: #C99819;
+    padding: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile_details{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+    z-index: 5;
+    display: flex;
+}
+.profile_left{
+    min-height: 100vh;
+    width: 25%;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile_right{
+    min-height: 100vh;
+    width: 75%;
+}
+.profile_right img{
+    width: 100%;
+    margin-top: 63px;
+}
+.top-location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 73px;
+    width: 100%;
+    gap: 5px;
+}
+.location{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 61%;
+    padding: 9px 10px ;
+    font-size: .9rem;
+    font-family: 'Inter', sans-serif;
+    border-radius: 8px;
+    border: .7px solid #919191;
+}
+#btn-active {
+    padding: 9px 22px;
+    background-color: #B42025;
+    color: #fff;
+    font-size: .9rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.profile-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    position: relative;
+    width: 322px;
+}
+.profile-image img {
+    width: inherit;
+}
+.profile_name{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(255, 0, 0, 0.443);
+    width: 99%;
+    padding: 10px;
+}
+.profile_name .name{
+    font-size: .8rem;
+}
+.profile_name .fighter-name{
+    font-size: 1rem;
+}
+
+.main-details{
+    margin-top: 10px;
+}
+.box-details{
+    font-family: 'Inter', sans-serif;
+    border-bottom: 1px solid #919191;
+    margin-bottom: 8px;
+    padding-bottom: 3px;
+    width: 322px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.name-style{
+    color: #C99819;
+    font-size: 1rem;
+    padding-bottom: 2px;
+}
+.box-details h3{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ******************************PROFILE PAGE END********************************* */
