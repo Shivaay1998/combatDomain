@@ -5,6 +5,20 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #222222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #222222;
+    border-radius: 8px;
 }
 
 .container {
@@ -15,8 +29,6 @@
     background-color: #000;
     position: relative;
 }
-
-
 
 .left {
     height: 100%;
@@ -785,3 +797,228 @@ input[type="radio"] {
 }
 
 /* ******************************PROFILE PAGE END********************************* */
+/* ******************************EDIT PROFILE PAGE START********************************* */
+
+.edit-profile{
+    width: 27%;
+}
+.edit-profile-right{
+    margin-top: 0;
+    width: 73%;
+    overflow: hidden;
+}
+.edit-right-box{
+    display: flex;
+    overflow-y: scroll;
+}
+.right-box-left{
+    height: 100%;
+    width: 75%;
+    /* background-color: rgb(130, 137, 238); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    overflow-y: scroll;
+}
+.right-box-left img{
+    width: 100%;
+}
+.main-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 12px;
+    background-color: #222222;
+}
+a#back-btn {
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+}
+.content-box1, .content-box2, .content-box3 {
+    background-color: #222222;
+    padding: 15px;
+    margin-top: 10px;
+}
+.box1, .box2 , .box3{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.edit-input {
+    width: 65%;
+}
+.change-profile-img {
+    width: 35%;
+}
+.change-profile-img .upload_image {
+    display: flex;
+    justify-content: center;
+}
+.dropzone1 {
+    width: 236px;
+    height: 220px;
+}
+.main-input {
+    display: flex;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 6px;
+    margin: 10px 0 22px 0;
+}
+.main-input input {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    padding: 0;
+}
+.main-input button {
+    padding: 8px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #000;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.edit-input h2 {
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.edit-input label, .change-profile-img label,.box3 label ,.info-box label ,.content-box3 label {
+    color: #fff;
+    font-size: .9rem;
+}
+.box3 .main-input{
+    margin: 10px 0 10px 0;
+}
+
+.content-box2 h2,.content-box3 h2{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.info-box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.info-box-left , .info-box-right{
+    width: 50%;
+}
+
+.line-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+.line-heading img{
+    width: 15%;
+}
+.line-heading h3{
+    color: #C99819;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.achievement-box{
+    width: 100%;
+    background-color: #000;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.content-box3 .first-box, .content-box3 .second-box{
+    display: flex;
+    gap: 10px;
+}
+.second-box .achievement-boxes{
+    width: 50%;
+}
+.cut-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #C99819;
+    padding: 5px 9px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.add-more{
+    width: 100%;
+    border: 1.3px solid #C99819;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: #C99819;
+    font-size: 2rem;
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+.right-box-right{
+    height: 100%;
+    width: 30%;
+    padding: 15px;
+}
+.right-box-content{
+    padding: 10px 0;
+    background-color: #222222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.boxes{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.color-indicator{
+    height: 15px;
+    width: 40px;
+    border-radius: 2px;
+    background-color: #3FA707;
+
+}
+.right-box-content img{
+    width: 90%;
+}
+.right-box-content button{
+    width: 90%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: #C99819;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+}
+#active{
+    background-color: #B42025;
+}
+
+
+
+/* ******************************EDIT PROFILE PAGE END********************************* */
