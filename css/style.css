@@ -837,7 +837,7 @@ a#back-btn {
     color: #fff;
     display: flex;
 }
-.content-box1, .content-box2, .content-box3 {
+.content-box1, .content-box2, .content-box3,.content-box4 {
     background-color: #222222;
     padding: 15px;
     margin-top: 10px;
@@ -890,7 +890,7 @@ a#back-btn {
     color: #fff;
     font-size: 1.3rem;
 }
-.edit-input label, .change-profile-img label,.box3 label ,.info-box label ,.content-box3 label {
+.edit-input label, .change-profile-img label,.box3 label ,.info-box label ,.content-box3 label,.content-box4 label {
     color: #fff;
     font-size: .9rem;
 }
@@ -898,7 +898,7 @@ a#back-btn {
     margin: 10px 0 10px 0;
 }
 
-.content-box2 h2,.content-box3 h2{
+.content-box2 h2,.content-box3 h2, .content-box4 h2{
     color: #fff;
     font-size: 1.3rem;
 }
@@ -965,6 +965,84 @@ a#back-btn {
     color: #C99819;
     font-size: 2rem;
     padding: 5px 0;
+}
+
+.recordbox{
+    width: 100%;
+}
+.recordbox_heading{
+    background-color: #C99819;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    margin: 10px 0;
+}
+.recordbox_heading p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.recordbox_heading button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.record-entry{
+    width: 100%;
+    padding: 8px 20px;
+}
+.head1{
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+.head1 h2{
+    font-size: 1.1rem;
+}
+.head1 img{
+    width: 80%;
+}
+.increase-box label{
+    font-size: 1rem;
+}
+.add{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: fit-content;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 10px 0;
+}
+.add p{
+    background-color: #000;
+    font-size: 2rem;
+    padding: 0 7px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.add span{
+    padding: 0 40px;
+    font-weight: 600;
+}
+.increase-box{
+    display: flex;
+    gap: 20px;
+
+}
+.record-info-box, .increase-box1{
+    width: 100%;
+    justify-content: space-between;
 }
 
 
