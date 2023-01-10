@@ -1005,6 +1005,8 @@ a#back-btn {
 }
 .head1 h2{
     font-size: 1.1rem;
+    color: #C99819;
+    font-weight: 400;
 }
 .head1 img{
     width: 80%;
@@ -1044,8 +1046,6 @@ a#back-btn {
     width: 100%;
     justify-content: space-between;
 }
-
-
 
 
 
@@ -1092,9 +1092,39 @@ a#back-btn {
     border-radius: 5px;
     color: #fff;
     font-size: 1rem;
+    cursor: pointer;
 }
 #active{
     background-color: #B42025;
+}
+.discipline-line{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    width: 90%;
+}
+.discipline-line input{
+    background-color: #646464;
+    padding: 10px;
+}
+.discipline-line button{
+    width: auto;
+    padding: 5.3px 14px;
+    font-size: 1.5rem;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+.discipline-box{
+    gap: 0px;
+    width: 90%;
+}
+.active-btns{
+    width: 90%;
+    display: flex;
+    gap: 10px;
 }
 
 
