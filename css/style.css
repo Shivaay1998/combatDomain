@@ -205,6 +205,7 @@ form {
     font-family: 'Inter', sans-serif;
     width: 100%;
     color: #fff;
+    overflow-y: scroll;
 }
 
 .first_input {
@@ -1097,7 +1098,7 @@ a#back-btn {
     padding: 0;
 }
 
-.main-input button {
+.main-input button, .main-input span {
     padding: 8px;
     font-size: 1.5rem;
     display: flex;
@@ -1110,7 +1111,7 @@ a#back-btn {
     transition: .2s all;
 }
 
-.main-input button:active {
+.main-input button:active, .main-input span:active {
     background-color: #fff;
     color: #000;
 }
@@ -1213,7 +1214,7 @@ a#back-btn {
     margin-top: 15px;
     color: #C99819;
     font-size: 2rem;
-    padding: 5px 0;
+    padding: 2px 0;
     transition: .3s all linear;
 }
 
@@ -1240,6 +1241,9 @@ a#back-btn {
     font-size: 1.2rem;
     color: #fff;
 }
+.recordbox_heading .bx-chevron-down {
+    font-size: 2rem;
+}
 
 .recordbox_heading button {
     background-color: transparent;
@@ -1256,11 +1260,11 @@ a#back-btn {
 .record-entry {
     width: 100%;
     padding: 8px 20px;
-    /* display: none; */
+    display: none;
 }
 
 .head1 {
-    margin: 20px 0;
+    margin: 15px 0;
     display: flex;
     align-items: flex-end;
     gap: 10px;
@@ -1284,10 +1288,13 @@ a#back-btn {
     display: flex;
     align-items: center;
     background-color: #fff;
-    width: fit-content;
+    width: 50%;
     border-radius: 3px;
     padding: 3px;
     margin: 10px 0;
+}
+.total{
+    width: 40%;
 }
 
 .add p {
@@ -1320,8 +1327,10 @@ a#back-btn {
 
 .right-box-right {
     height: 100%;
-    width: 30%;
-    padding: 15px;
+    width: 20%;
+    padding: 14px;
+    position: fixed;
+    right: 0;
 }
 
 .right-box-content {
@@ -1354,8 +1363,9 @@ a#back-btn {
     width: 90%;
 }
 
-.right-box-content button {
+.right-box-content span {
     width: 90%;
+    text-align: center;
     padding: 8px;
     border: none;
     outline: none;
@@ -1364,6 +1374,17 @@ a#back-btn {
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
+}
+span#remove1 {
+    width: 0;
+    padding: 10px 21px;
+    display: flex;
+    background: #000;
+    justify-content: center;
+    border: 0.8px solid #fff;
+}
+i.bx.bx-x {
+    font-size: 1.2rem;
 }
 
 #active {
@@ -1495,8 +1516,8 @@ li {
 }
 .number{
     border: none;
-    padding: 15px 4px 15px 25px;
-    width: 22%;
+    padding: 0;
+    text-align: center;
     margin: 0;
 }
 /* ******************************EDIT PROFILE PAGE END********************************* */
@@ -1617,3 +1638,23 @@ select.eventCalender {
 }
 
 /* ******************************EVENT PAGE END********************************* */
+/* ******************************UPCOMING EVENT PAGE START********************************* */
+.comingEvent{
+    gap: 0;
+}
+.comingEvent .headerLine{
+    margin-top: 0;
+    gap: 10px;
+    padding: 10px;
+}
+.headerLine select {
+    width: inherit;
+    padding: 10px;
+    background: #222222;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+/* ******************************UPCOMING EVENT PAGE END********************************* */
