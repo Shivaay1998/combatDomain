@@ -905,6 +905,7 @@ input[type="radio"] {
     background-color: #C99819;
     text-align: center;
     font-size: 1rem;
+    color: #fff;
 }
 
 .top-location {
@@ -1921,5 +1922,8 @@ select.eventCalender {
     align-items: center;
     color: #fff;
     margin-left: 5px;
+}
+.edit-left{
+    justify-content: center;
 }
 /* ******************************PROFILE DETAILS PAGE END********************************* */
