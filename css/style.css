@@ -43,7 +43,7 @@
 }
 
 .left img {
-    width: 93%;
+    width: 64%;
 }
 
 .img2 {
@@ -794,7 +794,7 @@ input[type="radio"] {
 }
 
 .profile_details {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-color: #000;
     z-index: 5;
@@ -1525,6 +1525,7 @@ li {
 
 .profile_right .main-header {
     margin-top: 64px;
+    gap: 10px;
 }
 .profile_right .main-header #back-btn{
     display: flex;
@@ -1658,3 +1659,267 @@ select.eventCalender {
 
 
 /* ******************************UPCOMING EVENT PAGE END********************************* */
+/* ******************************ADMIN PANEL PAGE START********************************* */
+.admin-left img {
+    width: -webkit-fill-available;
+    margin-top: 16px;
+}
+.admin-details {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 36px;
+}
+.admin-details h3{
+    color: #C99819;
+}
+.admin-details p{
+    color: #fff;
+}
+.admin-details img{
+    margin-top: 0;
+}
+.admin-details button{
+    border: none;
+    outline: none;
+    background-color: #C99819;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    color: #fff;
+   
+}
+.admin-header{
+    margin-top: 0 !important;
+    padding: 12px 20px;
+}
+.registered-boxes{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+.registered-box{
+    background-color: #222222;
+    width: 32%;
+    height: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-left{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.box-right{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C99819;
+}
+.box-right a{
+    color: #fff;
+    font-size: 1.6rem;
+}
+.edit-event{
+    width: 95%;
+    margin-top: 15px;
+}
+.add-event{
+    width: 161px;
+    height: 179px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #C99819;
+    position: relative;
+}
+.add-event img{
+    width: fit-content;
+    margin-top: 30px;
+}
+.add-event p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1rem;
+    background-color: #C99819;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* ******************************ADMIN PANEL PAGE END********************************* */
+/* ******************************LIST PAGE START********************************* */
+.list{
+    overflow: hidden;
+}
+.list-header{
+    margin-top: 0 !important;
+    justify-content: end;
+}
+.list-right{
+    gap: 0;
+}
+.list-details{
+    width: 98%;
+    margin-top: 15px;
+    overflow-y: scroll;
+}
+.headline, .list-entries{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #C99819;
+    padding: 10px;
+}
+.list-entries{
+    background-color: #222222;
+    padding: 15px 10px;
+}
+.headline p, .list-entries p{
+    width: 22%;
+    text-align: center;
+    font-weight: 700;
+}
+.list-entries p{
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+.list-entries p a{
+    color: #C99819;
+}
+.list-entries p span{
+    display: flex;
+    margin-left: 45px;
+}
+
+/* ******************************LIST PAGE END********************************* */
+/* ******************************PROFILE DETAILS PAGE START********************************* */
+
+.person-details{
+    width: 95%;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+.person-details .top-location{
+    margin-top: 0;
+    padding-top: 5px;
+}
+.person-details .profile_left {
+    width: 30%;
+    height: 108vh;
+}
+.person-details .profile_left .location {
+    font-size: .8rem;
+}
+.person-details .profile_right {
+    width: 70%;
+}
+.person-details #btn-active {
+    padding: 9px 22px;
+    background-color: #B42025;
+    color: #fff;
+    font-size: .8rem;
+}
+.person-details .profile_left img, .person-details .profile_right img {
+    margin-top: 0 !important;
+}
+.profile_left.height-left {
+    width: 100%;
+    margin-top: 40px;
+    height: 100vh;
+}
+.profile_left.height-left p{
+    background-color: #C99819;
+    width: 100%;
+    padding: 15px;
+    font-weight: 700;
+}
+.person-details .stats-box {
+    width: 100%;
+}
+.person-details .first-div {
+    flex-direction: column;
+}
+.person-details .stat-heading button {
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+.stats-box.details-para {
+    width: 98%;
+}
+.calender-box1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.calender-box1-left, .calender-box1-right{
+    width: 50%;
+    background-color: #222222;
+}
+.line1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #222222;
+    color: #fff;
+}
+.line1 span{
+    padding: 7px 15px;
+    background-color: #C99819;
+}
+.line2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 82px;
+    margin-top: 10px;
+}
+.line2 p{
+    transform: rotate(270deg);
+    position: absolute;
+    left: -27px;
+    background-color: #C99819;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px;
+}
+.box1line{
+    margin-left: 26px;
+
+}
+.line1-box1{
+    border: 3px solid #c99719c2;
+    border-radius: 3px;
+    height: 82px;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 5px;
+}
+/* ******************************PROFILE DETAILS PAGE END********************************* */
