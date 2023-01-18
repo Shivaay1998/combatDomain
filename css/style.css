@@ -1265,7 +1265,7 @@ a#back-btn {
 }
 
 .head1 {
-    margin: 15px 0;
+    margin: 15px 0 8px 0;
     display: flex;
     align-items: flex-end;
     gap: 10px;
@@ -1292,13 +1292,16 @@ a#back-btn {
     width: 50%;
     border-radius: 3px;
     padding: 3px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
+}
+.adding-box{
+    margin-top: 10px;
 }
 .total{
     width: 40%;
 }
 
-.add p {
+.add button{
     background-color: #000;
     font-size: 2rem;
     padding: 0 7px;
@@ -1897,6 +1900,7 @@ select.eventCalender {
     padding: 20px;
     height: 82px;
     margin-top: 10px;
+    position: relative;
 }
 .line2 p{
     transform: rotate(270deg);
@@ -1925,5 +1929,24 @@ select.eventCalender {
 }
 .edit-left{
     justify-content: center;
+}
+.achievment-box-details{
+    margin: 10px 0;
+    width: 100%;
+    background-color: violet;
+}
+.achievment-left{
+    width: 50%;
+    background-color: yellow;
+    display: flex;
+}
+.achievment-inside-left{
+    width: 35%;
+    background-color: #c99719c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 /* ******************************PROFILE DETAILS PAGE END********************************* */
