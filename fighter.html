@@ -63,11 +63,20 @@
                         <div class="first_right">
                             <div class="input upload_image">
                                 <label for="">Profile Image</label>
-                                <div class="dropzone">
-                                    <!-- <i class='bx bx-plus-circle'></i> -->
-                                    <input type="file" name="phn" class="upload-input" />
+                                <!-- **********COPY PASTE************** -->
+                                <div class="edit-img">
+                                    <div class="avatar-upload">
+                                        <div class="avatar-edit">
+                                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                            <label for="imageUpload"><i class='bx bx-upload'></i></label>
+                                        </div>
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview" style="background-image: url('');">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="hide" id="phn"></span>
+                                <!-- **********COPY PASTE************** -->
                             </div>
                         </div>
                     </div>
@@ -139,9 +148,16 @@
                     </div>
                     <div class="input upload_img">
                         <label for="">Upload Identification (Drivers License or Passport)</label><br>
-                        <label for="hiddenBtn" class="choose-btn" id="chooseBtn">Click To Upload</label><br>
-                        <input type="file" id="hiddenBtn"><br>
-                        <span class="hide" id="img1"></span>
+                        <!-- **********COPY PASTE************** -->
+                        <div class="wrapper">
+                            <input type="file" id="file-input">
+                            <label for="file-input">
+                                <p id="para">Click To Upload</p>
+                                <span id="show"></span>
+                            </label>
+                            <i class='bx bxs-x-circle remove'></i>
+                        </div>
+                        <!-- **********COPY PASTE************** -->
                     </div>
                     <div class="input">
                         <label for="">Create Password</label>
@@ -278,7 +294,57 @@
             tel.style.color = "green"
             return true;
         }
+        // <!-- **********COPY PASTE************** -->
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+        $('document').ready(function () {
 
+            var $file = $('#file-input'),
+                $para = $('#para')
+                $label = $file.next('label'),
+                $labelText = $label.find('span'),
+                // $showSpan = $('#show')
+                $labelRemove = $('i.remove'),
+                labelDefault = $labelText.text();
+
+            // on file change
+            $file.on('change', function (event) {
+                var fileName = $file.val().split('\\').pop();
+                if (fileName) {
+                    console.log($file)
+                    $para.hide();
+                    $labelText.show()
+                    $labelText.text(fileName);
+                    $labelRemove.show();
+                } else {
+                    $labelText.text(labelDefault);
+                    $labelRemove.hide();
+                }
+            });
+
+            // Remove file   
+            $labelRemove.on('click', function (event) {
+                $file.val("");
+                $labelText.text(labelDefault);
+                $labelRemove.hide();
+                $para.show();
+                $labelText.hide()
+                console.log($file)
+            });
+        })
+        // <!-- **********COPY PASTE************** -->
     </script>
 </body>
 

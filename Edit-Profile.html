@@ -82,20 +82,17 @@
                                 </div>
                                 <div class="change-profile-img">
                                     <div class="input upload_image">
-                                        <div class="dropzone dropzone1">
-                                            <div class="avatar-upload1">
-                                                <div class="avatar-edit1">
-                                                    <input type='file' id="imageUpload1" accept=".png, .jpg, .jpeg" />
-                                                    <label for="imageUpload1">Change</label>
-                                                </div>
-                                                <div class="avatar-preview1">
-                                                    <div id="imagePreview1"
-                                                        style="background-image: url('imgs/img1.png');">
-                                                    </div>
+                                        <div class="avatar-upload1">
+                                            <div class="avatar-edit1">
+                                                <input type='file' id="imageUpload1" accept=".png, .jpg, .jpeg" />
+                                                <label for="imageUpload1">Change</label>
+                                            </div>
+                                            <div class="avatar-preview1">
+                                                <div id="imagePreview1"
+                                                    style="background-image: url('imgs/profile.png');">
                                                 </div>
                                             </div>
                                         </div>
-                                        <span class="hide" id="phn"></span>
                                     </div>
                                 </div>
                             </div>
@@ -203,17 +200,18 @@
                             <h2>Gym Info.</h2>
                             <img src="imgs/Line.png" alt="">
                             <div class="info-box">
-                                <div class="info-box-left">
+                                <div class="info-box-left" id="info-box-left">
                                     <label for="">Gym Name</label>
                                     <div class="main-input">
                                         <input type="text" name="" id="input17">
                                         <span id="btn17"><i class='bx bxs-pencil'></i></span>
                                     </div>
                                     <label for="">Discipline </label>
-                                    <div class="main-input">
+                                    <div class="main-input" id="mainInput">
                                         <input type="text" name="" id="input18">
                                         <span id="btn18"><i class='bx bxs-pencil'></i></span>
-                                        <span style="margin-left: 3px;"><i class='bx bx-plus'></i></span>
+                                        <span style="margin-left: 3px;" class="bar-line"><i
+                                                class='bx bx-plus'></i></span>
                                     </div>
                                 </div>
                                 <div class="info-box-right">
@@ -294,12 +292,13 @@
                                         <span id="btn27"><i class='bx bxs-pencil'></i></span>
                                     </div>
                                 </div>
-                                <div class="info-box-right">
+                                <div class="info-box-right" id="info-box-right">
                                     <label for="">Additional Coach</label>
-                                    <div class="main-input">
+                                    <div class="main-input" id="mainInput2">
                                         <input type="text" name="" id="input28">
                                         <span id="btn28"><i class='bx bxs-pencil'></i></span>
-                                        <span style="margin-left: 3px;"><i class='bx bx-plus'></i></span>
+                                        <span style="margin-left: 3px;" class="bar-line1"><i
+                                                class='bx bx-plus'></i></span>
                                     </div>
                                 </div>
                             </div>
@@ -956,7 +955,16 @@
                                             <div class="info-box-right">
                                                 <label for="">Rank</label>
                                                 <div class="main-input">
-                                                    <input type="text" name="" id="input1">
+                                                    <select name="" id="">
+                                                        <option value="" selected disabled hidden></option>
+                                                        <option value="">White</option>
+                                                        <option value="">Yellow</option>
+                                                        <option value="">Green</option>
+                                                        <option value="">Blue</option>
+                                                        <option value="">Red</option>
+                                                        <option value="">Brown</option>
+                                                        <option value="">Black</option>
+                                                    </select>
                                                     <span id="btn1"><i class='bx bxs-pencil'></i></span>
                                                 </div>
                                             </div>
@@ -1008,8 +1016,12 @@
                                             <div class="info-box-right">
                                                 <label for="">Rank</label>
                                                 <div class="main-input">
-                                                    <input type="text" name="" id="input1">
-                                                    <span id="btn1"><i class='bx bxs-pencil'></i></span>
+                                                    <select name="" id="">
+                                                        <option value="" selected disabled hidden></option>
+                                                        <option value="">Bronze</option>
+                                                        <option value="">Silver</option>
+                                                        <option value="">Gold</option>
+                                                        <span id="btn1"><i class='bx bxs-pencil'></i></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1060,7 +1072,16 @@
                                             <div class="info-box-right">
                                                 <label for="">Rank</label>
                                                 <div class="main-input">
-                                                    <input type="text" name="" id="input1">
+                                                    <select name="" id="">
+                                                        <option value="" selected disabled hidden></option>
+                                                        <option value="">White</option>
+                                                        <option value="">Yellow</option>
+                                                        <option value="">Green</option>
+                                                        <option value="">Blue</option>
+                                                        <option value="">Red</option>
+                                                        <option value="">Brown</option>
+                                                        <option value="">Black</option>
+                                                    </select>
                                                     <span id="btn1"><i class='bx bxs-pencil'></i></span>
                                                 </div>
                                             </div>
@@ -1112,7 +1133,16 @@
                                             <div class="info-box-right">
                                                 <label for="">Rank</label>
                                                 <div class="main-input">
-                                                    <input type="text" name="" id="input37">
+                                                    <select name="" id="">
+                                                        <option value="" selected disabled hidden></option>
+                                                        <option value="">White</option>
+                                                        <option value="">Yellow</option>
+                                                        <option value="">Green</option>
+                                                        <option value="">Blue</option>
+                                                        <option value="">Red</option>
+                                                        <option value="">Brown</option>
+                                                        <option value="">Black</option>
+                                                    </select>
                                                     <span id="btn37"><i class='bx bxs-pencil'></i></span>
                                                 </div>
                                             </div>
@@ -1164,7 +1194,16 @@
                                             <div class="info-box-right">
                                                 <label for="">Rank</label>
                                                 <div class="main-input">
-                                                    <input type="text" name="" id="input39">
+                                                    <select name="" id="">
+                                                        <option value="" selected disabled hidden></option>
+                                                        <option value="">White</option>
+                                                        <option value="">Yellow</option>
+                                                        <option value="">Green</option>
+                                                        <option value="">Blue</option>
+                                                        <option value="">Red</option>
+                                                        <option value="">Brown</option>
+                                                        <option value="">Black</option>
+                                                    </select>
                                                     <span id="btn39"><i class='bx bxs-pencil'></i></span>
                                                 </div>
                                             </div>
@@ -1216,7 +1255,16 @@
                                             <div class="info-box-right">
                                                 <label for="">Rank</label>
                                                 <div class="main-input">
-                                                    <input type="text" name="" id="input41">
+                                                    <select name="" id="">
+                                                        <option value="" selected disabled hidden></option>
+                                                        <option value="">White</option>
+                                                        <option value="">Yellow</option>
+                                                        <option value="">Green</option>
+                                                        <option value="">Blue</option>
+                                                        <option value="">Red</option>
+                                                        <option value="">Brown</option>
+                                                        <option value="">Black</option>
+                                                    </select>
                                                     <span id="btn41"><i class='bx bxs-pencil'></i></span>
                                                 </div>
                                             </div>
@@ -1255,11 +1303,75 @@
                                     <p>Other Style</p>
                                     <span id="btn55"><i class='bx bx-chevron-down'></i></span>
                                 </div>
-                                <div class="otherside" id="otherside">
+                                <div class="record-entry" id="hide55">
+                                    <label for="">Format</label>
+                                    <div class="main-input" style="width: 50%;">
+                                        <input type="text" name="" id="input40">
+                                        <span id="btn40"><i class='bx bxs-pencil'></i></span>
+                                    </div>
+                                    <div class="increase-box">
+                                        <div class="info-box record-info-box">
 
-                                </div>  
-
+                                            <div class="info-box-left">
+                                                <label for="">Additional Style</label>
+                                                <div class="main-input">
+                                                    <input type="text" name="" id="input40">
+                                                    <span id="btn40"><i class='bx bxs-pencil'></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="info-box-right">
+                                                <label for="">Rank</label>
+                                                <div class="main-input">
+                                                    <select name="" id="">
+                                                        <option value="" selected disabled hidden></option>
+                                                        <option value="">White</option>
+                                                        <option value="">Yellow</option>
+                                                        <option value="">Green</option>
+                                                        <option value="">Blue</option>
+                                                        <option value="">Red</option>
+                                                        <option value="">Brown</option>
+                                                        <option value="">Black</option>
+                                                    </select>
+                                                    <span id="btn41"><i class='bx bxs-pencil'></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="increase-box increase-box1">
+                                        <div class="increase-boxes">
+                                            <label for="">Experience(yr)</label>
+                                            <div class="add adding-box">
+                                                <button type="button" id="sub" class="sub minus">-</button>
+                                                <input type="text" class="number" value="00">
+                                                <button type="button" id="add" class="add">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="increase-boxes">
+                                            <label for="">Total Fight</label>
+                                            <div class="add adding-box">
+                                                <button type="button" id="sub" class="sub minus">-</button>
+                                                <input type="text" class="number" value="00">
+                                                <button type="button" id="add" class="add">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="increase-boxes">
+                                            <label for="">Win Fight</label>
+                                            <div class="add adding-box">
+                                                <button type="button" id="sub" class="sub minus">-</button>
+                                                <input type="text" class="number" value="00">
+                                                <button type="button" id="add" class="add">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recordbox" id="hideRecordBox">
+                                    <div class="recordbox_heading" style="width: 100%;">
+                                        <p>Other Style</p>
+                                        <span id="btnss"><i class='bx bx-plus'></i></span>
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
 
@@ -1339,7 +1451,7 @@
         });
         function readURL1(input) {
             if (input.files && input.files[0]) {
-                var reader = new FileRead();
+                var reader = new FileReader();
                 reader.onload = function (e) {
                     $('#imagePreview1').css('background-image', 'url(' + e.target.result + ')');
                     $('#imagePreview1').hide();
@@ -1442,6 +1554,40 @@
                                 <input type="text">
                                 <span id="remove1" class="remove1"><i class='bx bx-x'></i></span>
                             </div>`
+        }
+        $(function () {
+            $(".bar-line").bind("click", function () {
+                var div = $("<li/>");
+                div.html(GetDynamicBox1(""));
+                $("#info-box-left").append(div);
+            });
+            $("body").on("click", ".remove2", function () {
+                $(this).closest("#mainInput").remove();
+            });
+        });
+        function GetDynamicBox1(value) {
+            return `<div class="main-input" id="mainInput">
+                                            <input type="text" name="" id="input18">
+                                            <span id="btn18"><i class='bx bxs-pencil'></i></span>
+                                            <span style="margin-left: 3px;" class="remove2"><i class='bx bx-x'></i></span>
+                                    </div>`
+        }
+        $(function () {
+            $(".bar-line1").bind("click", function () {
+                var div = $("<li/>");
+                div.html(GetDynamicBox2(""));
+                $("#info-box-right").append(div);
+            });
+            $("body").on("click", ".remove3", function () {
+                $(this).closest("#mainInput2").remove();
+            });
+        });
+        function GetDynamicBox2(value) {
+            return `<div class="main-input" id="mainInput2">
+                                        <input type="text" name="" id="input28">
+                                        <span id="btn28"><i class='bx bxs-pencil'></i></span>
+                                        <span style="margin-left: 3px;" class="remove3"><i class='bx bx-x'></i></span>
+                                    </div>`
         }
         $(function () {
             $(".other-btn").bind("click", function () {
@@ -1848,6 +1994,7 @@
             hide53.style.display = 'none'
             hide54.style.display = 'none'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn45.addEventListener('click', () => {
@@ -1863,6 +2010,7 @@
             hide53.style.display = 'none'
             hide54.style.display = 'none'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn46.addEventListener('click', () => {
@@ -1878,6 +2026,7 @@
             hide53.style.display = 'none'
             hide54.style.display = 'none'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn47.addEventListener('click', () => {
@@ -1893,6 +2042,7 @@
             hide53.style.display = 'none'
             hide54.style.display = 'none'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn48.addEventListener('click', () => {
@@ -1908,6 +2058,7 @@
             hide53.style.display = 'none'
             hide54.style.display = 'none'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn49.addEventListener('click', () => {
@@ -1923,6 +2074,7 @@
             hide53.style.display = 'none'
             hide54.style.display = 'none'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn50.addEventListener('click', () => {
@@ -1938,6 +2090,7 @@
             hide53.style.display = 'none'
             hide54.style.display = 'none'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn51.addEventListener('click', () => {
@@ -1953,6 +2106,7 @@
             hide53.style.display = 'none'
             hide54.style.display = 'none'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn52.addEventListener('click', () => {
@@ -1968,6 +2122,7 @@
             hide53.style.display = 'none'
             hide54.style.display = 'none'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn53.addEventListener('click', () => {
@@ -1983,6 +2138,7 @@
             hide53.style.display = 'block'
             hide54.style.display = 'none'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn54.addEventListener('click', () => {
@@ -1998,6 +2154,7 @@
             hide53.style.display = 'none'
             hide54.style.display = 'block'
             hide55.style.display = 'none'
+            document.getElementById('hideRecordBox').style.display = 'none'
             console.log('hello');
         })
         btn55.addEventListener('click', () => {
@@ -2013,60 +2170,30 @@
             hide53.style.display = 'none'
             hide54.style.display = 'none'
             hide55.style.display = 'block'
+            document.getElementById('hideRecordBox').style.display = 'block'
             console.log('hello');
         })
-        // var active = document.getElementById('active')
+        
         // var retired = document.getElementById('retired')
-        // var showStatus = document.getElementsByClassName('color')
+        // var active = document.getElementById('active')
+        // var showColor = document.getElementsByClassName('color')
+        // var changecolor = document.getElementById('colorChanger')
 
-        // for (let i = 0; i < showStatus.length; i++) {
-        //     // showStatus[i].addEventListener('click', ()=>{
-        //     //     if(active){
-        //     //         indicator.style.backgroundColor = '#B42025'
-        //     //         console.log('green');
-        //     //     }
-        //     //     else if(retired){
-        //     //         console.log('grey');
-        //     //         indicator.style.backgroundColor = '#968A8A'
+        // active.addEventListener('click', ()=>{
+        //     changecolor.style.backgroundColor = '#B42025'
+        //     active.style.backgroundColor = '#3FA707'
+        //     active.innerHTML = 'Active'
+        //     retired.style.backgroundColor = '#968A8A'
+        //     retired.innerHTML = 'Retired'
 
-        //     //     }
-
-        //     // })
-        //     showStatus[i].onclick = changeColor;
-        // }
-        // function changeColor() {
-        //     console.log('hmmmmmmmmm');
-        //     var dynamicDiv = document.getElementById('color-indicator');
-        //     dynamicDiv.style.backgroundColor = this.id;
-        // }
-        // var colorElem = document.getElementsByClassName('color')
-        // for(var i = 0; i < colorElem.length; i++){
-        //     colorElem[i].onclick = changeColor;
-        // }
-        // function changeColor(){
-        //     console.log('color changed');
-        //     var boxColor = document.getElementById('boxColor')
-        //     boxColor.style.backgroundColor = this.id;
-        // }
-
-        var retired = document.getElementById('retired')
-        var active = document.getElementById('active')
-        var showColor = document.getElementsByClassName('color')
-        var changecolor = document.getElementById('colorChanger')
-
-        for (var i = 0; i < showColor.length; i++) {
-            showColor[i].addEventListener('click', () => {
-                if (active) {
-                    console.log('color change');
-                    changecolor.style.backgroundColor = '#B42025'
-                }
-                else if (retired) {
-                    changecolor.style.backgroundColor = '#968A8A'
-                    console.log(' change');
-                }
-            })
-        }
-
+        // })
+        // retired.addEventListener('click', ()=>{
+        //     changecolor.style.backgroundColor = '#968A8A'
+        //     retired.style.backgroundColor = '#3FA707'
+        //     retired.innerHTML = 'Active'
+        //     active.style.backgroundColor = '#B42025'
+        //     active.innerHTML = 'In-active'
+        // })
     </script>
 </body>
 

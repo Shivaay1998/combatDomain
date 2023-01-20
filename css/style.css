@@ -72,7 +72,7 @@
 }
 
 .additional_right_box {
-    margin-bottom: 11%;
+    margin-bottom: 8%;
 }
 
 .right_section {
@@ -216,6 +216,71 @@ form {
 
 .first_left {
     width: 60%;
+}
+
+.first_right {
+    width: 35%;
+}
+
+.first_right .edit-img {
+    margin-top: 10px;
+}
+
+.first_right .avatar-upload .avatar-preview {
+    width: 100%;
+    height: 140px;
+    background: #fff;
+}
+
+.first_right .avatar-upload .avatar-edit {
+    position: absolute;
+    right: 7px;
+    z-index: 1;
+    bottom: 8px;
+}
+
+.first_right .avatar-upload .avatar-edit input+label {
+    font-size: 1.3rem;
+    padding: 7px 12px;
+    color: #c99819;
+}
+
+.wrapper {
+    text-align: center;
+    background-color: #c99819;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+#show{
+    display: none;
+}
+
+.wrapper h2 {
+    padding-bottom: 20px;
+}
+
+.wrapper #file-input {
+    display: none;
+}
+
+.wrapper label[for='file-input'] * {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.wrapper label[for='file-input'] span {
+    margin-left: 10px
+}
+
+.wrapper i.remove {
+    vertical-align: middle;
+    margin-left: 5px;
+    cursor: pointer;
+    display: none;
 }
 
 input {
@@ -691,12 +756,22 @@ input[type="radio"] {
 
 }
 
+
 .for_weight input {
     width: 70%;
 }
 
 .inside_weight {
     width: 30%;
+}
+#discipline {
+    width: 100%;
+    padding: 17px 0;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    font-size: 1rem;
 }
 
 .inside_weight select {
@@ -750,7 +825,7 @@ input[type="radio"] {
     padding: 11px 40px;
     background-color: #000;
     color: #fff;
-    z-index: 1;
+    z-index: 0;
     position: fixed;
     right: 0;
     left: 0;
@@ -800,6 +875,10 @@ input[type="radio"] {
     z-index: 5;
     display: flex;
 }
+.profile_details1{
+    overflow: hidden;
+
+}
 
 .profile_left {
     min-height: 100vh;
@@ -818,6 +897,9 @@ input[type="radio"] {
     gap: 10px;
     align-items: center;
 }
+.profile_right1{
+    overflow-y: scroll;
+}
 
 .profile_right img {
     width: 98%;
@@ -825,22 +907,25 @@ input[type="radio"] {
     margin-top: 74px;
 }
 
-.first-div{
+.first-div {
     display: flex;
     width: 98%;
     gap: 10px;
 }
-.stats-box{
+
+.stats-box {
     width: 69%;
 }
-.stat-heading{
+
+.stat-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: #C99819;
 }
-.stat-heading button{
+
+.stat-heading button {
     background-color: transparent;
     border: none;
     outline: none;
@@ -848,14 +933,16 @@ input[type="radio"] {
     color: #fff;
     font-size: 1rem;
 }
-.stat-details{
+
+.stat-details {
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
 }
-.stat-details .statBox{
+
+.stat-details .statBox {
     height: 120px;
     width: 300px;
     background-color: #222222;
@@ -866,21 +953,24 @@ input[type="radio"] {
     gap: 10px;
 }
 
-.stat-details .statBox p{
+.stat-details .statBox p {
     font-size: 1.4rem;
     color: #fff;
 }
-.stat-details .statBox h5{
+
+.stat-details .statBox h5 {
     font-size: 1.3rem;
     color: #fff;
 }
-.calender{
+
+.calender {
     width: 30%;
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
-.calenderBox{
+
+.calenderBox {
     height: 171px;
     width: 300px;
     background-color: #222222;
@@ -891,12 +981,14 @@ input[type="radio"] {
     flex-direction: column;
     position: relative;
 }
-.calenderBox img{  
+
+.calenderBox img {
     width: 76px;
     margin-top: 0;
     margin-bottom: 22px;
 }
-.calenderBox p{
+
+.calenderBox p {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -981,7 +1073,7 @@ input[type="radio"] {
 .box-details {
     font-family: 'Inter', sans-serif;
     border-bottom: 1px solid #919191;
-    margin-bottom: 8px;
+    margin-bottom: 17px;
     padding-bottom: 3px;
     width: 322px;
     display: flex;
@@ -1000,7 +1092,69 @@ input[type="radio"] {
     font-size: 1rem;
     font-weight: 600;
 }
-
+.notification .stat-details .statBox {
+    height: 78px;
+    width: 154px;
+}
+.notification .stat-details .statBox p {
+    font-size: 1rem;
+    color: #fff;
+}
+.notification .stat-details .statBox h5 {
+    font-size: .9rem;
+    color: #fff;
+}
+.profile .notify-line3{
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+.profile .notification-box {
+    height: 97vh;
+    overflow-y: scroll;
+}
+.notification .line1-box1 {
+    height: 52px;
+    width: 21%;
+}
+.notification .line2 {
+    height: 53px;
+    margin-top: 4px;
+}
+.profile .notify-line2{
+    margin-top: 0;
+}
+.profile .stat-details {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.notification .line1-box1 span {
+    font-size: .6rem;
+}
+.notification .line1-box1 h3 {
+    font-size: .9rem;
+}
+.notification .calender-box1-left, .notification .calender-box1-right {
+    width: 50%;
+    background-color: #222222;
+    padding: 4px;
+}
+.notification .line2 p {
+    left: -12px;
+    width: 56px;
+    padding: 5px;
+    font-size: .55rem;
+}
+.noti .line1 p {
+    font-size: .7rem;
+}
+.notification .line1 span {
+    padding: 6px 15px;
+    background-color: #C99819;
+    font-size: .7rem;
+}
 /* ******************************PROFILE PAGE END********************************* */
 /* ******************************EDIT PROFILE PAGE START********************************* */
 
@@ -1042,6 +1196,7 @@ input[type="radio"] {
     padding: 5px 12px;
     background-color: #222222;
 }
+
 a#back-btn {
     font-size: 3rem;
     color: #fff;
@@ -1064,6 +1219,7 @@ a#back-btn {
     display: flex;
     width: 100%;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .edit-input {
@@ -1091,6 +1247,11 @@ a#back-btn {
     border-radius: 6px;
     margin: 10px 0 22px 0;
 }
+.main-input select {
+    width: 100%;
+    border: none;
+    outline: none;
+}
 
 .main-input input {
     font-size: 1rem;
@@ -1099,7 +1260,8 @@ a#back-btn {
     padding: 0;
 }
 
-.main-input button, .main-input span {
+.main-input button,
+.main-input span {
     padding: 8px;
     font-size: 1.5rem;
     display: flex;
@@ -1112,7 +1274,8 @@ a#back-btn {
     transition: .2s all;
 }
 
-.main-input button:active, .main-input span:active {
+.main-input button:active,
+.main-input span:active {
     background-color: #fff;
     color: #000;
 }
@@ -1242,7 +1405,8 @@ a#back-btn {
     font-size: 1.2rem;
     color: #fff;
 }
-.recordbox_heading .bx-chevron-down {
+
+.recordbox_heading .bx-chevron-down,.recordbox_heading .bx-plus {
     font-size: 2rem;
 }
 
@@ -1294,14 +1458,16 @@ a#back-btn {
     padding: 3px;
     /* margin: 10px 0; */
 }
-.adding-box{
+
+.adding-box {
     margin-top: 10px;
 }
-.total{
+
+.total {
     width: 40%;
 }
 
-.add button{
+.add button {
     background-color: #000;
     font-size: 2rem;
     padding: 0 7px;
@@ -1379,6 +1545,7 @@ a#back-btn {
     font-size: 1rem;
     cursor: pointer;
 }
+
 span#remove1 {
     width: 0;
     padding: 10px 21px;
@@ -1387,6 +1554,7 @@ span#remove1 {
     justify-content: center;
     border: 0.8px solid #fff;
 }
+
 i.bx.bx-x {
     font-size: 1.2rem;
 }
@@ -1394,6 +1562,7 @@ i.bx.bx-x {
 #active {
     background-color: #B42025;
 }
+
 #retired {
     background-color: #968A8A;
 }
@@ -1473,22 +1642,36 @@ li {
     align-items: center;
 }
 
-.avatar-upload, .avatar-upload1 {
+.avatar-upload,
+.avatar-upload1 {
     position: relative;
 }
+.avatar-upload1 {
+    position: relative;
+    width: 240px;
+    border: 2px solid #fff;
+}
 
-.avatar-upload .avatar-edit, .avatar-upload1 .avatar-edit1 {
+.avatar-upload .avatar-edit{
     position: absolute;
     right: 36px;
     z-index: 1;
     bottom: 16px;
 }
+.avatar-upload1 .avatar-edit1 {
+    position: absolute;
+    right: 9px;
+    z-index: 1;
+    bottom: 11px;
+}
 
-.avatar-upload .avatar-edit input,.avatar-upload1 .avatar-edit1 input {
+.avatar-upload .avatar-edit input,
+.avatar-upload1 .avatar-edit1 input {
     display: none;
 }
 
-.avatar-upload .avatar-edit input+label,.avatar-upload1 .avatar-edit1 input+label {
+.avatar-upload .avatar-edit input+label,
+.avatar-upload1 .avatar-edit1 input+label {
     display: inline-block;
     margin-bottom: 0;
     background: #000;
@@ -1502,15 +1685,27 @@ li {
     padding: 7px 25px;
     transition: all 0.2s ease-in-out;
 }
+.avatar-upload1 .avatar-edit1 input+label {
+    font-size: 1rem;
+}
 
-.avatar-upload .avatar-preview,.avatar-upload1 .avatar-preview1 {
+.avatar-upload .avatar-preview,
+.avatar-upload1 .avatar-preview1 {
     width: 100%;
     height: 297px;
     position: relative;
     border-radius: 8px
 }
+.avatar-upload1 .avatar-preview1 {
+    width: 100%;
+    height: 220px;
+}
+.avatar-preview1 {
+    height: 216px;
+}
 
-.avatar-upload .avatar-preview>div, .avatar-upload1 .avatar-preview1>div {
+.avatar-upload .avatar-preview>div,
+.avatar-upload1 .avatar-preview1>div {
     width: 100%;
     height: 100%;
     /* border-radius: 100%; */
@@ -1518,12 +1713,17 @@ li {
     background-repeat: no-repeat;
     background-position: center;
 }
-.number{
+
+.number {
     border: none;
     padding: 0;
     text-align: center;
     margin: 0;
 }
+#hideRecordBox{
+    display: none;
+}
+
 /* ******************************EDIT PROFILE PAGE END********************************* */
 /* ******************************EVENT PAGE START********************************* */
 
@@ -1531,19 +1731,23 @@ li {
     margin-top: 64px;
     gap: 10px;
 }
-.profile_right .main-header #back-btn{
+
+.profile_right .main-header #back-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#back-btn span{
+
+#back-btn span {
     font-size: 1.6rem;
 }
-.eventBox{
+
+.eventBox {
     display: flex;
     gap: 10px;
     width: 98%;
 }
+
 .calenderDate {
     width: 75%;
     display: flex;
@@ -1552,12 +1756,14 @@ li {
     padding: 9px;
     gap: 10px;
 }
+
 .selectOption {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
+
 select.eventCalender {
     padding: 10px;
     width: 45%;
@@ -1565,30 +1771,38 @@ select.eventCalender {
     color: #fff;
     border: 1px solid #fff;
 }
-.showDate{
+
+.showDate {
     width: 92%;
     height: fit-content;
 }
+
 .week {
     display: flex;
 }
+
 .day {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
 }
+
 .week:first-of-type .day:first-of-type {
     margin-left: 42.85714%;
 }
+
 .week:last-of-type .day:last-of-type {
     margin-right: 14.285%;
 }
+
 .month {
     max-width: 560px;
 }
+
 .week {
     height: 61px;
 }
+
 .day {
     color: #fff;
     background-color: #222222;
@@ -1599,14 +1813,15 @@ select.eventCalender {
     box-shadow: -1px -1px #848080, inset -1px -1px 0 0 #848080;
 }
 
-.eventShowBox{
+.eventShowBox {
     width: 100%;
     padding: 10px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
-.eventShowCard{
+
+.eventShowCard {
     height: 362px;
     width: 284px;
     padding: 10px;
@@ -1614,9 +1829,11 @@ select.eventCalender {
     background-color: #222222;
     box-shadow: 1px 1px 10px #C99819;
 }
-.eventShowCard img{
+
+.eventShowCard img {
     margin-top: 0;
 }
+
 .dateEvent {
     width: 100%;
     text-align: end;
@@ -1625,17 +1842,20 @@ select.eventCalender {
     color: #9B9494;
     font-weight: 900;
 }
-#eventPic{
+
+#eventPic {
     width: 100%;
     height: 145px;
 }
-.session{
+
+.session {
     font-size: 1.4rem;
     color: #C99819;
     padding: 4px 0;
     text-decoration: underline;
     font-weight: 900;
 }
+
 .eventDetails span {
     font-size: .9rem;
     color: #9B9494;
@@ -1644,14 +1864,16 @@ select.eventCalender {
 
 /* ******************************EVENT PAGE END********************************* */
 /* ******************************UPCOMING EVENT PAGE START********************************* */
-.comingEvent{
+.comingEvent {
     gap: 0;
 }
-.comingEvent .headerLine{
+
+.comingEvent .headerLine {
     margin-top: 0;
     gap: 10px;
     padding: 10px;
 }
+
 .headerLine select {
     width: inherit;
     padding: 10px;
@@ -1668,6 +1890,7 @@ select.eventCalender {
     width: -webkit-fill-available;
     margin-top: 16px;
 }
+
 .admin-details {
     width: 92%;
     display: flex;
@@ -1675,16 +1898,20 @@ select.eventCalender {
     gap: 14px;
     margin-top: 36px;
 }
-.admin-details h3{
+
+.admin-details h3 {
     color: #C99819;
 }
-.admin-details p{
+
+.admin-details p {
     color: #fff;
 }
-.admin-details img{
+
+.admin-details img {
     margin-top: 0;
 }
-.admin-details button{
+
+.admin-details button {
     border: none;
     outline: none;
     background-color: #C99819;
@@ -1693,20 +1920,23 @@ select.eventCalender {
     font-size: 1.1rem;
     border-radius: 8px;
     color: #fff;
-   
+
 }
-.admin-header{
+
+.admin-header {
     margin-top: 0 !important;
     padding: 12px 20px;
 }
-.registered-boxes{
+
+.registered-boxes {
     width: 95%;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 15px;
 }
-.registered-box{
+
+.registered-box {
     background-color: #222222;
     width: 32%;
     height: 145px;
@@ -1714,7 +1944,8 @@ select.eventCalender {
     justify-content: space-between;
     align-items: center;
 }
-.box-left{
+
+.box-left {
     width: 85%;
     height: 100%;
     display: flex;
@@ -1723,7 +1954,8 @@ select.eventCalender {
     align-items: center;
     color: #fff;
 }
-.box-right{
+
+.box-right {
     height: 100%;
     width: 15%;
     display: flex;
@@ -1731,15 +1963,18 @@ select.eventCalender {
     align-items: center;
     background-color: #C99819;
 }
-.box-right a{
+
+.box-right a {
     color: #fff;
     font-size: 1.6rem;
 }
-.edit-event{
+
+.edit-event {
     width: 95%;
     margin-top: 15px;
 }
-.add-event{
+
+.add-event {
     width: 161px;
     height: 179px;
     display: flex;
@@ -1748,11 +1983,13 @@ select.eventCalender {
     border: 2px solid #C99819;
     position: relative;
 }
-.add-event img{
+
+.add-event img {
     width: fit-content;
     margin-top: 30px;
 }
-.add-event p{
+
+.add-event p {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1767,22 +2004,27 @@ select.eventCalender {
 
 /* ******************************ADMIN PANEL PAGE END********************************* */
 /* ******************************LIST PAGE START********************************* */
-.list{
+.list {
     overflow: hidden;
 }
-.list-header{
+
+.list-header {
     margin-top: 0 !important;
     justify-content: end;
 }
-.list-right{
+
+.list-right {
     gap: 0;
 }
-.list-details{
+
+.list-details {
     width: 98%;
     margin-top: 15px;
     overflow-y: scroll;
 }
-.headline, .list-entries{
+
+.headline,
+.list-entries {
     gap: 10px;
     display: flex;
     justify-content: space-between;
@@ -1790,25 +2032,31 @@ select.eventCalender {
     background-color: #C99819;
     padding: 10px;
 }
-.list-entries{
+
+.list-entries {
     background-color: #222222;
     padding: 15px 10px;
 }
-.headline p, .list-entries p{
+
+.headline p,
+.list-entries p {
     width: 22%;
     text-align: center;
     font-weight: 700;
 }
-.list-entries p{
+
+.list-entries p {
     color: #fff;
     font-size: 0.95rem;
     font-weight: 300;
     word-wrap: break-word;
 }
-.list-entries p a{
+
+.list-entries p a {
     color: #C99819;
 }
-.list-entries p span{
+
+.list-entries p span {
     display: flex;
     margin-left: 45px;
 }
@@ -1816,60 +2064,91 @@ select.eventCalender {
 /* ******************************LIST PAGE END********************************* */
 /* ******************************PROFILE DETAILS PAGE START********************************* */
 
-.person-details{
+.person-details {
     width: 95%;
     margin-top: 20px;
     overflow-y: scroll;
 }
-.person-details .top-location{
+
+.person-details .top-location {
     margin-top: 0;
     padding-top: 5px;
 }
+
 .person-details .profile_left {
     width: 30%;
-    height: 108vh;
+    height: 119vh;
 }
+
 .person-details .profile_left .location {
     font-size: .8rem;
 }
+
 .person-details .profile_right {
     width: 70%;
 }
+
 .person-details #btn-active {
     padding: 9px 22px;
     background-color: #B42025;
     color: #fff;
     font-size: .8rem;
 }
-.person-details .profile_left img, .person-details .profile_right img {
+
+.person-details .profile_left img,
+.person-details .profile_right img {
     margin-top: 0 !important;
 }
+.person-details .profile_left img{
+    border: 2px solid #B42025;
+}
+
 .profile_left.height-left {
     width: 100%;
-    margin-top: 40px;
-    height: 100vh;
+    margin-top: 61px;
+    min-height: 110vh;
 }
-.profile_left.height-left p{
+.profile_right1 .profile_left.height-left {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.profile_left.height-left .box-details{
+    border-bottom: none;
+    padding-left: 10px;
+}
+.profile_left.height-left img{
+    border: none;
+}
+
+.profile_left.height-left p {
     background-color: #C99819;
     width: 100%;
     padding: 15px;
     font-weight: 700;
 }
+
 .person-details .stats-box {
     width: 100%;
 }
+
 .person-details .first-div {
     flex-direction: column;
 }
+.person-details .box-details h3 {
+    font-size: .9rem;
+}
+
 .person-details .stat-heading button {
     text-decoration: none;
     color: #000;
     font-weight: 900;
 }
+
 .stats-box.details-para {
     width: 98%;
 }
-.calender-box1{
+
+.calender-box1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1877,12 +2156,15 @@ select.eventCalender {
     gap: 10px;
     position: relative;
 }
-.calender-box1-left, .calender-box1-right{
+
+.calender-box1-left,
+.calender-box1-right {
     width: 50%;
     background-color: #222222;
     padding: 10px;
 }
-.line1{
+
+.line1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1890,11 +2172,13 @@ select.eventCalender {
     background-color: #222222;
     color: #fff;
 }
-.line1 span{
+
+.line1 span {
     padding: 7px 15px;
     background-color: #C99819;
 }
-.line2{
+
+.line2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1903,6 +2187,7 @@ select.eventCalender {
     position: relative;
     padding-left: 23px;
 }
+
 .line2 p {
     transform: rotate(270deg);
     position: absolute;
@@ -1914,11 +2199,13 @@ select.eventCalender {
     font-size: .8rem;
     text-align: center;
 }
-.box1line{
+
+.box1line {
     margin-left: 26px;
 
 }
-.line1-box1{
+
+.line1-box1 {
     border: 3px solid #c9981933;
     border-radius: 3px;
     height: 82px;
@@ -1930,30 +2217,38 @@ select.eventCalender {
     color: #fff;
     margin-left: 5px;
 }
+
 .line1-box1 span {
     font-size: .9rem;
 }
+
 .line1-box1 h3 {
     font-size: 1.1rem;
 }
-.edit-left{
+
+.edit-left {
     justify-content: center;
 }
-.achievment-box-details{
+
+.achievment-box-details {
     margin: 10px 0 1px 0;
     width: 100%;
     display: flex;
     gap: 10px;
 }
-.achievment-box-details1{
+
+.achievment-box-details1 {
     margin: 0 0 10px 0;
 }
-.achievment-left, .achievment-right{
+
+.achievment-left,
+.achievment-right {
     border: 2px solid #C99819;
     width: 50%;
     display: flex;
 }
-.achievment-inside-left{
+
+.achievment-inside-left {
     width: 35%;
     background-color: #c99819;
     display: flex;
@@ -1962,20 +2257,23 @@ select.eventCalender {
     flex-direction: column;
     padding: 14px;
 }
-.achievment-inside-left p{
+
+.achievment-inside-left p {
     font-weight: 600;
 }
-.achievment-inside-left span{
+
+.achievment-inside-left span {
     margin-top: 10px;
     padding: 6px 25px;
     font-weight: 800;
     background-color: #000;
     color: #fff;
 }
-.achievment-inside-right{
+
+.achievment-inside-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
     position: relative;
     padding-left: 10px;
     gap: 5px;
@@ -1983,7 +2281,8 @@ select.eventCalender {
     background-color: #222222;
     color: #fff;
 }
-.achievment-inside-right h3{
+
+.achievment-inside-right h3 {
     position: absolute;
     top: 0;
     right: 0;
@@ -1992,33 +2291,42 @@ select.eventCalender {
     color: #fff;
     font-size: .9rem;
 }
-.martial-box{
+
+.martial-box {
     margin: 10px 0 5px 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
-.martial-left, .martial-right{
+
+.martial-left,
+.martial-right {
     width: 49%;
     background-color: #222222;
     padding: 10px;
     color: #fff;
     border: 2px solid #C99819;
 }
-.martial-left h3, .martial-right h3{
+
+.martial-left h3,
+.martial-right h3 {
     text-decoration: underline;
 }
-.martial-left p, .martial-right p{
+
+.martial-left p,
+.martial-right p {
     margin-top: 10px;
     color: #c99819;
 }
-.martial-box-info{
+
+.martial-box-info {
     display: flex;
     gap: 10px;
     margin-top: 15px;
 }
-.martial-info{
+
+.martial-info {
     height: 70px;
     width: 150px;
     display: flex;
@@ -2028,16 +2336,28 @@ select.eventCalender {
     border: 3px solid #c9981933;
     border-radius: 3px;
 }
-.martial-info p{
+
+.martial-info p {
     margin-top: 0;
 }
-.noGap-box{
+
+.noGap-box {
     gap: 0;
+}
+.profile{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+}
+.profile .notification{
+    top: 0;
 }
 
 /* ******************************PROFILE DETAILS PAGE END********************************* */
 /* ******************************OTHER LIST PAGE START********************************* */
-.notification{
+.notification {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2049,24 +2369,29 @@ select.eventCalender {
     position: absolute;
     display: none;
 }
-.notification-box{
+
+.notification-box {
     height: 90vh;
     width: 45%;
     background-color: #000;
     padding: 10px;
+    border: 2px solid #fff;
     border-radius: 8px;
     z-index: 99999;
 }
-.notify-line1{
+
+.notify-line1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.notify-line1 p{
+
+.notify-line1 p {
     color: #c99819;
     font-size: 1.2rem;
 }
-.notify-line1 .bx{
+
+.notify-line1 .bx {
     background-color: #000;
     color: #c99819;
     border: 1px solid #c99819;
@@ -2076,70 +2401,85 @@ select.eventCalender {
     padding: 3px;
     cursor: pointer;
 }
-.notify-line2{
+
+.notify-line2 {
     width: 100%;
     margin-top: 10px;
 }
-.notify-line2 img{
+
+.notify-line2 img {
     border: 2px solid #fff;
     width: inherit;
 }
-.notify-line3{
+
+.notify-line3 {
     display: flex;
     width: 100%;
     margin-top: 30px;
 }
-.notify-left{
+
+.notify-left {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
+
 .notify-left .top-location {
     margin-top: 0;
     padding-left: 28px;
     justify-content: flex-start;
 }
+
 .notify-left .location {
     font-size: .9rem;
     width: 92%;
     text-align: center;
 }
+
 .notify-left #btn-active {
     font-size: .8rem;
 }
+
 .notify-left .profile-image {
     width: 274px;
 }
+
 .notify-left .profile-image img {
     border: 4px solid #c99819;
 }
+
 .notify-left .profile_name {
     background-color: #c997198a;
 }
-.notify-right{
+
+.notify-right {
     padding: 10px;
 }
+
 .notify-right .box-details h3 {
     color: #fff;
     font-size: .9rem;
     font-weight: 300;
 }
-.view{
+
+.view {
     color: #c99819 !important;
     cursor: pointer;
 }
 
 /* ******************************OTHER LIST PAGE END********************************* */
 /* ******************************EVENT PAGE START********************************* */
-.event{
+.event {
     width: 100%;
     height: 100vh;
     background-color: #000;
     overflow: hidden;
+    position: relative;
 }
-.event-header{
+
+.event-header {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -2147,12 +2487,15 @@ select.eventCalender {
     padding: 10px 15px;
     background-color: #222222;
 }
-.event-box{
+
+.event-box {
     display: flex;
     width: 100%;
+    /* overflow-y: scroll; */
 }
-.event-box-left{
-    width: 38%;
+
+.event-box-left {
+    width: 43%;
     height: 100vh;
     background-color: #222222;
     display: flex;
@@ -2161,19 +2504,202 @@ select.eventCalender {
     overflow-y: scroll;
 
 }
-.event-box-left h2{
+
+.event-box-left h2,
+.event-box-right h2 {
     width: 90%;
     color: #fff;
 }
+
 .event-box-left .calenderDate {
     width: 100%;
 }
+
 .event-box-left .week {
     height: 50px;
 }
-.add-event-box{
+
+.add-event-box {
     width: 90%;
-    background-color: dodgerblue;
+    padding-bottom: 70px;
+}
+
+.add-line1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.add-line1 p {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.add-line1 span {
+    color: #c99819;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.add-event-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.add-event-card .eventShowCard {
+    height: 393px;
+    width: 250px;
+    border-radius: 4px;
+    box-shadow: .5px .5px 5px #c99819;
+}
+
+.add-event-card .dateEvent,
+.event-boxes .dateEvent {
+    font-size: .85rem;
+}
+
+.add-event-card #eventPic,
+.event-boxes #eventPic {
+    height: 114px;
+}
+
+.add-event-card .session,
+.event-boxes .session {
+    font-size: 1rem;
+}
+
+.add-event-card .eventDetails span,
+.event-boxes .eventDetails span {
+    font-size: .85rem;
+}
+
+.add-event-card .eventShowCard img,
+.event-boxes .eventShowCard img {
+    width: -webkit-fill-available;
+}
+
+#edit,
+#delete {
+    width: 100%;
+    background-color: #c99819;
+    text-align: center;
+    font-size: .8rem;
+    padding: 8px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+#delete {
+    background-color: #B42025;
+}
+
+.event-box-right {
+    width: 72%;
+    height: 100vh;
+    padding: 10px;
+    padding-bottom: 70px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-box-right .list-header {
+    background: transparent;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+#search {
+    width: 160%;
+    padding: 9.5px;
+    background: #222222;
+    margin: 0;
+    color: #fff;
+    border: 0.8px solid #fff;
+    outline: none;
+    border-radius: 0px;
+}
+
+#search::placeholder {
+    font-size: .85rem;
+    color: #fff;
+}
+
+.event-boxes {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.event-boxes .eventShowCard {
+    height: 393px;
+    width: 290px;
+    border-radius: 4px;
+    box-shadow: .5px .5px 5px #c99819;
+}
+
+.event .notification {
+    top: 0;
+}
+
+.event .notification-box {
+    height: 80vh;
+}
+
+.event form {
+    margin-top: 10px;
+}
+
+.form-box1 {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.form-left-box {
+    width: 137%;
+}
+
+.form-right-box {
+    width: 100%;
+}
+
+.event .avatar-upload {
+    margin-top: 12px;
+    border: 3px solid #fff;
+}
+
+.event .avatar-upload .avatar-preview {
+    height: 314px;
+}
+
+.event .avatar-upload .avatar-edit input+label {
+    font-size: 1rem;
+}
+
+.form-line2,
+.form-line3 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#notify-btn {
+    width: 50%;
+    height: 52px;
+    margin-top: 28px;
+    background-color: #222222;
+    color: #c99819;
+    border: none;
 }
 
 /* ******************************EVENT PAGE END********************************* */
