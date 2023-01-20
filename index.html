@@ -13,9 +13,10 @@
 <body>
     <div class="container" id="container">
         <div class="left">
-            <img src="imgs/main.png" alt="" class="img1">
-            <!-- <div class="loader" id="loader"></div> -->
-            <!-- <img src="imgs/main1.png" alt="" class="img2"> -->
+            <video autoplay playsinline muted>
+                <source src="vid.mp4" type="video/mp4" />
+            </video>
+            <div class="loader" id="loader"></div>
         </div>
 
         <div class="right right_section" id="right_section">
@@ -53,15 +54,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script src="js/script.js"></script>
     <script>
-        // var loader = document.getElementById('loader')
-        // var loaderr = bodymovin.loadAnimation({
-        //     container: loader, // required
-        //     path: '123.json',
-        //     renderer: 'svg',
-        //     loop: true,
-        //     autoplay: true,
-        //     name: "Demo Animation",
-        // });
+        var loader = document.getElementById('loader')
+        var loader = bodymovin.loadAnimation({
+            container: loader, // required
+            path: '1234.json',
+            renderer: 'svg',
+            loop: false,
+            autoplay: true,
+            name: "Demo Animation",
+        });
     </script>
 </body>
 

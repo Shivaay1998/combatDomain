@@ -38,6 +38,7 @@
     background-color: #222222;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     position: fixed;
 }
@@ -45,11 +46,16 @@
 .left img {
     width: 64%;
 }
-
-.img2 {
-    display: none;
+video {
+    width: 567px;
+    margin-bottom: 20px;
 }
-
+div#loader {
+    height: 200px;
+    width: 289px;
+    /* background-color: yellow; */
+    transform: rotate(12deg);
+}
 .right {
     width: 50%;
     height: 100%;
@@ -72,7 +78,9 @@
 }
 
 .additional_right_box {
-    margin-bottom: 8%;
+    margin-bottom: 10%;
+    margin-top: 92px;
+
 }
 
 .right_section {
@@ -134,11 +142,7 @@ a#changePage {
     margin-top: 10px;
 }
 
-@media (max-width:1111px) {
-    .select_box h2 {
-        width: 88%;
-    }
-}
+
 
 /* for register page */
 
@@ -164,7 +168,7 @@ a#changePage {
 
 .links button:nth-child(1) {
     background-color: #C99819;
-    width: 70%;
+    width: 100%;
 }
 
 .links button .bx {
@@ -462,6 +466,18 @@ input[type="radio"] {
         height: 100%;
     }
 }
+@media (max-width:1170px) {
+    .select_box h2 {
+        width: 100%;
+    }
+    video {
+        width: 380px;
+    }
+    div#loader {
+        height: 164px;
+        transform: rotate(12deg);
+    }
+}
 
 @media (max-width:1120px) {
     .links {
@@ -485,23 +501,29 @@ input[type="radio"] {
         width: 131px;
     }
 
-    .left {
-        width: 50%;
-    }
-
-    .right_box {
-        width: 95%;
-    }
+        .right_box {
+            width: 79%;
+        }
 
     .left img {
         width: 100%;
         height: 88%;
     }
+    .additional_right_box {
+        margin-top: 100px;
+    }
+}
+@media (max-width:1065px) {
+    .signUp_btn span {
+        font-size: 1rem;
+    }
+    .additional_right_box {
+        margin-top: 112px;
+    }
 }
 
 @media (max-width:930px) {
     .left {
-        width: 53%;
         display: flex;
         align-items: center;
     }
@@ -551,6 +573,7 @@ input[type="radio"] {
     .right_box {
         margin-bottom: 10vh;
         width: 86%;
+        margin-top: 164px;
     }
 
     .signUp_btn span {
@@ -567,6 +590,9 @@ input[type="radio"] {
     .left img {
         width: 100%;
         height: 66%;
+    }
+    .first_right .avatar-upload .avatar-preview {
+        height: 155px;
     }
 
 }
@@ -592,14 +618,28 @@ input[type="radio"] {
     .areas {
         gap: 7px;
     }
-
-    .select select {
-        padding: 9px 6px;
-    }
-
     .dropzone {
         width: 131px;
         height: 148px;
+    }
+    video {
+        width: 310px;
+    }
+    div#loader {
+        height: 135px;
+    }
+    .right_box {
+        width: 93%;
+        margin-top: 195px;
+    }
+    .select_box h2 {
+        font-size: 1rem;
+    }
+    .select select {
+        font-size: .8rem;
+    }
+    .next_btn {
+        font-size: 1rem;
     }
 }
 
@@ -608,21 +648,16 @@ input[type="radio"] {
         overflow: scroll;
         flex-direction: column;
     }
-
     .left {
         width: 100%;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        padding: 20px;
     }
 
     .right {
         width: 100%;
     }
-
-    .left {
-        height: 100%;
-    }
-
     .left img {
         width: 55%;
     }
@@ -665,6 +700,14 @@ input[type="radio"] {
     .left,
     .right {
         position: static;
+    }
+    .right_box {
+        margin-top: 0;
+    }
+}
+@media (max-width:700px) {
+    .first_right .avatar-upload .avatar-preview {
+        height: 140px;
     }
 }
 
@@ -719,6 +762,12 @@ input[type="radio"] {
     .three,
     .four {
         display: none;
+    }
+    video {
+        width: 297px;
+    }
+    div#loader {
+        height: 123px;
     }
 }
 
@@ -809,11 +858,11 @@ input[type="radio"] {
     }
 }
 
-@media (max-width:910px) {
+/* @media (max-width:910px) {
     .additional_right_box {
         overflow: scroll;
     }
-}
+} */
 
 /* ******************************REGISTER PAGE END********************************* */
 /* ******************************PROFILE PAGE START********************************* */
@@ -825,7 +874,7 @@ input[type="radio"] {
     padding: 11px 40px;
     background-color: #000;
     color: #fff;
-    z-index: 0;
+    z-index: 1;
     position: fixed;
     right: 0;
     left: 0;
@@ -1045,6 +1094,7 @@ input[type="radio"] {
 }
 
 .profile-image img {
+    border: 2px solid #B42025;
     width: inherit;
 }
 
@@ -1090,7 +1140,7 @@ input[type="radio"] {
 .box-details h3 {
     color: #fff;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 .notification .stat-details .statBox {
     height: 78px;
@@ -1157,10 +1207,6 @@ input[type="radio"] {
 }
 /* ******************************PROFILE PAGE END********************************* */
 /* ******************************EDIT PROFILE PAGE START********************************* */
-
-.edit-profile {
-    width: 27%;
-}
 
 .edit-profile-right {
     margin-top: 0;
@@ -1723,7 +1769,418 @@ li {
 #hideRecordBox{
     display: none;
 }
-
+#hideImage{
+    display: none;
+}
+@media (max-width:1370px) {
+    .profile-image {
+        width: 277px;
+    }
+    .top-location {
+        width: 90%;
+    }
+    .country-location, .city-location {
+        font-size: .8rem;
+        text-align: center;
+    }
+    #btn-active {
+        padding: 9px 12px;
+        font-size: .8rem;
+    }
+    .box-details {
+        width: 276px;
+    }
+    .name-style {
+        font-size: .9rem;
+    }
+    .box-details h3 {
+        font-size: .9rem;
+    }
+}
+@media (max-width:1160px) {
+    .stat-details .statBox {
+        height: 83px;
+    }
+    .stat-heading {
+        padding: 7px;
+    }
+    .stat-details .statBox p {
+        font-size: 1.1rem;
+    }
+    .stat-details .statBox h5 {
+        font-size: 1rem;
+    }
+    .calenderBox {
+        height: 131px;
+    }
+    .calenderBox img {
+        width: 52px;
+    }
+    .calenderBox p {
+        font-size: .9rem;
+    }
+    .profile_left {
+        width: 30%;
+    }
+    .profile_right {
+        width: 70%;
+    }
+    .calender {
+        width: 32%;
+    }
+    .stats-box {
+        width: 66%;
+    }
+    .martial-left h3, .martial-right h3 {
+        font-size: 1rem;
+    }
+    .martial-left p, .martial-right p {
+        font-size: .88rem;
+    }
+    .martial-left span, .martial-right span {
+        font-size: .85rem;
+    }
+    .martial-left .martial-info p, .martial-right .martial-info p {
+        font-size: .7rem;
+    }
+    .calender .box-details {
+        width: 226px;
+    }
+    .profile_left.height-left p {
+        padding: 9px;
+    }
+    .stat-heading h3 {
+        font-size: 1rem;
+    }
+    .stat-heading button {
+        font-size: .9rem;
+    }
+}
+@media (max-width:1010px) {
+    .name-style {
+        font-size: .8rem;
+    }
+    .box-details h3 {
+        font-size: .8rem;
+    }
+    .calender .box-details{
+        margin-bottom: 7px;
+    }
+}
+@media (max-width:970px) {
+    .header {
+        padding: 11px 12px;
+    }
+    #complete-profile, #edit-profile, #logout {
+        font-size: 0.85rem;
+    }
+    .calender .box-details {
+        width: 207px;
+    }
+    .profile-image {
+        width: 237px;
+    }
+    .profile_name .name {
+        font-size: .7rem;
+    }
+    .profile_name .fighter-name {
+        font-size: .8rem;
+    }
+    .box-details {
+        width: 233px;
+    }
+    .location {
+        padding: 2px 10px;
+    }
+    .country-location, .city-location {
+        font-size: .7rem;
+    }
+}
+@media (max-width:880px) {
+    .first-div {
+        flex-direction: column;
+    }
+    .stats-box {
+        width: 100%;
+    }
+    .calender {
+        width: 50%;
+    }
+    .profile_left {
+        width: 34%;
+    }
+    .profile_right {
+        width: 66%;
+        padding-left: 7px;
+    }
+}
+@media (max-width:730px) {
+    .logo img {
+        width: 223px;
+    }
+    #complete-profile, #edit-profile, #logout {
+        font-size: 0.75rem;
+        padding: 7px;
+    }
+    .profile-image {
+        width: 207px;
+    }
+    .box-details {
+        width: 204px;
+    }
+}
+@media (max-width:700px) {
+    .profile{
+        overflow:scroll;
+    }
+    .profile_details1 {
+        overflow: scroll;
+        flex-direction: column;
+        position: relative;
+    }
+    .profile_left {
+        width: 100%;
+        align-items: flex-start;
+        padding: 20px;
+        min-height: 74vh;
+    }
+    .profile .header{
+        position: relative;
+    }
+    #hideImage{
+        display: block;
+    }
+    .location {
+        padding: 12px 10px;
+        position: absolute;
+        top: 19px;
+        right: 14px;
+        font-size: 1.1rem;
+        background-color: #0006;
+        width: 31%;
+    }
+    .top-location{
+        margin-top: 0;
+    }
+    .profile_name {
+        bottom: 84px;
+    right: -346px;
+    width: 120%;
+    background-color: transparent;
+    }
+    .profile-image {
+        width: 254px;
+        position: absolute;
+        top: 182px;
+    }
+    .profile_name .name {
+        font-size: 1rem;
+    }
+    .profile_name .fighter-name {
+        font-size: 1.1rem;
+    }
+    #btn-active {
+        padding: 9px 12px;
+        font-size: .8rem;
+        position: absolute;
+        z-index: 1;
+        left: 176px;
+        top: 367px;
+    }
+    .main-details {
+        margin-top: 153px;
+    }
+    .box-details {
+        width: 231%;
+    }
+    .name-style {
+        font-size: 1rem;
+    }
+    .box-details h3 {
+        font-size: 1rem;
+    }
+    .profile_right {
+        width: 100%;
+        padding-left: 7px;
+        overflow-y: initial;
+    }
+    #hideImage1{
+        display: none;
+    }
+    .main-details {
+        top: 280px;
+        position: absolute;
+    }
+    .calender .main-details{
+        position: initial;
+        margin-top: 10px;
+    }
+    /* .first-div {
+        flex-direction: row;
+    }
+    .stats-box {
+        width: 65%;
+    }
+    .calender {
+        width: 34%;
+    }
+    .calenderBox {
+        height: 126px;
+    }
+    .calender .main-details {
+        margin-top: 10px;
+    }
+    .calender .box-details {
+        border-bottom: none;
+        padding-left: 0 !important;
+    }
+    .calender .name-style {
+        font-size: .9rem;
+    }
+    .calender .box-details h3 {
+        font-size: .9rem;
+    }
+    .calender .profile_left {
+        padding: 9px;
+    }
+    .martial-left .martial-info p, .martial-right .martial-info p {
+        font-size: .5rem;
+    } */
+    
+}
+@media (max-width:665px) {
+    .profile_left {
+        min-height: 84vh;
+    }
+    .calender {
+        width: 61%;
+    }
+    .calender .profile_left {
+        padding: 3px;
+    }
+    .profile_left.height-left {
+        min-height: 115vh;
+    }
+    .profile .notification-box {
+        height: 90vh;
+        width: 81%;
+        background-color: #000;
+        padding: 10px;
+        border: 2px solid #fff;
+        border-radius: 8px;
+        z-index: 99999;
+    }
+}
+@media (max-width:625px) {
+    .logo img {
+        width: 207px;
+    }
+    .profile_name {
+        bottom: 103px;
+        right: -322px;
+        width: 120%;
+    }
+    .box-details {
+        width: 220%;
+    }
+    .profile_right {
+        min-height: 275vh;
+    }
+    #complete-profile, #edit-profile, #logout {
+        font-size: 0.6rem;
+        padding: 7px;
+        text-align: center;
+    }
+}
+@media (max-width:575px) {
+    .profile-image {
+        width: 222px;
+        top: 137px;
+    }
+    .profile_name {
+        bottom: 41px;
+        right: -289px;
+        width: 120%;
+    }
+    #btn-active {
+        left: 148px;
+        top: 297px;
+    }
+    .main-details {
+        top: 206px;
+        position: absolute;
+    }
+    .location {
+        width: 46%;
+    }
+}
+@media (max-width:500px) {
+    .profile-image {
+        width: 194px;
+        top: 130px;
+    }
+    .profile .header {
+        position: relative;
+        flex-direction: column;
+    }
+    .logo img {
+        width: 293px;
+    }
+    #complete-profile, #edit-profile, #logout {
+        font-size: .9rem;
+        padding: 7px;
+        text-align: center;
+    }
+    .profile_name {
+        bottom: 72px;
+    right: -257px;
+        width: 120%;
+    }
+    .profile_name .name {
+        font-size: .9rem;
+    }
+    .profile_name .fighter-name {
+        font-size: .9rem;
+    }
+    #btn-active {
+        left: 119px;
+        top: 270px;
+    }
+    .main-details {
+        top: 174px;
+        position: absolute;
+    }
+    .box-details {
+        width: 161%;
+    }
+    .profile_left {
+        min-height: 75vh;
+    }
+}
+@media (max-width:441px) {
+    .profile-image {
+        width: 173px;
+        top: 109px;
+    }
+    .profile_name {
+        bottom: 52px;
+        right: -234px;
+        width: 135%;
+    }
+    #btn-active {
+        left: 115px;
+        top: 233px;
+        padding: 8px;
+        font-size: .7rem;
+    }
+    .main-details {
+        top: 134px;
+        position: absolute;
+    }
+    .box-details {
+        width: 134%;
+    }
+}
 /* ******************************EDIT PROFILE PAGE END********************************* */
 /* ******************************EVENT PAGE START********************************* */
 
@@ -2118,6 +2575,7 @@ select.eventCalender {
 }
 .profile_left.height-left img{
     border: none;
+    margin-top: 0;
 }
 
 .profile_left.height-left p {
@@ -2331,6 +2789,7 @@ select.eventCalender {
     width: 150px;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     flex-direction: column;
     border: 3px solid #c9981933;
@@ -2365,7 +2824,7 @@ select.eventCalender {
     height: 100vh;
     /* background-color: #000;
     opacity: .4; */
-    z-index: 0;
+    z-index: 20;
     position: absolute;
     display: none;
 }
