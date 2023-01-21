@@ -80,7 +80,7 @@ div#loader {
 .right {
     width: 50%;
     height: 100%;
-    margin-top: 5%;
+    margin-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -250,13 +250,24 @@ form {
 .first_right .edit-img {
     margin-top: 10px;
 }
+.create-profile .first_right .edit-img {
+    margin-top: 0;
+}
 
 .first_right .avatar-upload .avatar-preview {
     width: 100%;
     height: 140px;
     background: #fff;
 }
-
+.create-profile .first_right .avatar-upload .avatar-preview {
+    height: 163px;
+}
+.create-profile .first_left .input:nth-child(2){
+    margin-top: 40px;
+}
+.input {
+    margin: 10px 0;
+}
 .first_right .avatar-upload .avatar-edit {
     position: absolute;
     right: 7px;
@@ -391,7 +402,7 @@ input {
 }
 
 .dateTime {
-    margin: 5% auto;
+    margin: 10px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -413,8 +424,9 @@ input {
     color: #000;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 32%;
+    padding: 10px;
 }
 
 input {
@@ -433,6 +445,7 @@ input[type="radio"] {
 .areas {
     display: flex;
     gap: 33px;
+    margin: 10px 0;
 }
 
 .areas input {
@@ -519,7 +532,7 @@ input[type="radio"] {
     }
 
     form {
-        width: 88%;
+        width: 100%;
     }
 
     .dropzone {
@@ -602,6 +615,12 @@ input[type="radio"] {
         margin-bottom: 10vh;
         width: 86%;
         margin-top: 164px;
+    }
+
+    .create-profile .right_box {
+        margin-bottom: 0;
+        width: 86%;
+        margin-top: 0;
     }
 
     .signUp_btn span {
@@ -749,6 +768,7 @@ input[type="radio"] {
     .first_right .avatar-upload .avatar-preview {
         height: 140px;
     }
+    
 }
 
 @media (max-width:600px) {
@@ -773,7 +793,6 @@ input[type="radio"] {
         height: 47%;
     }
 }
-
 @media (max-width:520px) {
 
     .one,
@@ -810,6 +829,15 @@ input[type="radio"] {
 
     div#loader {
         height: 123px;
+    }
+    .first_left {
+        width: 61%;
+    }
+    .first_right {
+        width: 35%;
+    }
+    .create-profile .first_right .avatar-upload .avatar-preview {
+        height: 148px;
     }
 }
 
@@ -934,6 +962,10 @@ input[type="radio"] {
     align-items: center;
     gap: 10px;
     justify-content: end;
+    width: 27%;
+}
+.z-header .edit-profile {
+    width: auto;
 }
 
 #complete-profile,
@@ -1995,6 +2027,12 @@ li {
     .right-box-right {
         width: 24%;
     }
+    .avatar-upload .avatar-preview, .avatar-upload1 .avatar-preview1 {
+        width: 100%;
+        height: 205px;
+        position: relative;
+        border-radius: 8px;
+    }
 }
 
 @media (max-width:1010px) {
@@ -2263,6 +2301,12 @@ li {
         border-radius: 8px;
         z-index: 99999;
     }
+    .avatar-upload .avatar-preview, .avatar-upload1 .avatar-preview1 {
+        width: 100%;
+        height: 193px;
+        position: relative;
+        border-radius: 8px;
+    }
 }
 
 @media (max-width:625px) {
@@ -2317,6 +2361,13 @@ li {
 
     .location {
         width: 46%;
+    }
+    .avatar-upload .avatar-preview, .avatar-upload1 .avatar-preview1 {
+        width: 100%;
+        height: 174px;
+    }
+    .avatar-upload .avatar-edit input+label, .avatar-upload1 .avatar-edit1 input+label {
+        font-size: .8rem;
     }
 }
 
@@ -2392,6 +2443,26 @@ li {
         text-align: center;
         margin-top: 5px;
     }
+    .profile_left.height-left p {
+        padding: 8px !important;
+    }
+    .name-style {
+        font-size: .8rem;
+    }
+    .box-details h3 {
+        font-size: .9rem;
+    }
+    .name-style {
+        padding-bottom: 0;
+    }
+    .line-heading {
+        margin: 10px 0;
+    }
+    .profile_name {
+        bottom: 76px;
+        right: -241px;
+        width: 120%;
+    }
 }
 
 @media (max-width:441px) {
@@ -2420,6 +2491,44 @@ li {
 
     .box-details {
         width: 134%;
+    }
+    .profile_left {
+        min-height: 64vh;
+    }
+}
+@media (max-width:425px) {
+    .profile_name .name {
+        font-size: .8rem;
+    }
+    .profile_name .fighter-name {
+        font-size: .8rem;
+    }
+}
+@media (max-width:390px) {
+    .profile-image {
+        width: 152px;
+        top: 85px;
+    }
+    #btn-active {
+        left: 94px;
+        top: 192px;
+        padding: 8px;
+        font-size: .65rem;
+    }
+    .profile_name {
+        bottom: 16px;
+        right: -198px;
+        width: 125%;
+    }
+    #btn-active {
+        left: 94px;
+        top: 192px;
+    }
+    .main-details {
+        top: 93px;
+    }
+    .profile_left {
+        min-height: 60vh;
     }
 }
 
@@ -3238,6 +3347,7 @@ select.eventCalender {
     align-items: center;
     justify-content: space-between;
     padding: 8px 0;
+    padding-left: 14px;
 }
 
 .add-line1 p {
@@ -3255,7 +3365,7 @@ select.eventCalender {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 20px;
 }
 
@@ -3411,9 +3521,60 @@ select.eventCalender {
     border: none;
 }
 
+@media (max-width:1430px) {
+    .add-event-card .eventShowCard {
+        width: 222px !important;
+    }
+
+    .event-boxes .eventShowCard {
+        height: 393px;
+        width: 247px;
+    }
+}
+
+@media (max-width:1260px) {
+    .add-event-card .eventShowCard {
+        width: 197px !important;
+        height: 389px !important;
+    }
+
+    .add-event-card .dateEvent,
+    .event-boxes .dateEvent {
+        font-size: .75rem;
+    }
+
+    .add-event-card #eventPic {
+        height: 101px;
+    }
+
+    .add-event-card .session,
+    .event-boxes .session {
+        font-size: .95rem;
+    }
+
+    .add-event-card .eventDetails span,
+    .event-boxes .eventDetails span {
+        font-size: .75rem;
+    }
+
+    #edit,
+    #delete {
+        padding: 5px;
+    }
+
+    .event-boxes .eventShowCard {
+        height: 361px;
+        width: 211px;
+    }
+
+    .event-boxes #eventPic {
+        height: 90px;
+    }
+}
+
 @media (max-width:1130px) {
     .add-event-card .eventShowCard {
-        height: 393px;
+        height: 376px !important;
         width: 196px !important;
     }
 
@@ -3422,10 +3583,8 @@ select.eventCalender {
     }
 
     .event-boxes .eventShowCard {
-        height: 391px !important;
-        width: 240px !important;
-        border-radius: 4px;
-        box-shadow: 0.5px 0.5px 5px #c99819;
+        height: 380px !important;
+        width: 192px !important;
     }
 
     .add-event-card #eventPic,
@@ -3441,7 +3600,7 @@ select.eventCalender {
 
 @media (max-width:1030px) {
     .add-event-card .eventShowCard {
-        height: 373px !important;
+        height: 346px !important;
         width: 214px !important;
     }
 
@@ -3465,6 +3624,21 @@ select.eventCalender {
         flex-direction: column;
     }
 
+    .add-event-card #eventPic,
+    .event-boxes #eventPic {
+        height: 93px !important;
+    }
+
+    .add-event-card .session,
+    .event-boxes .session {
+        font-size: 1rem !important;
+    }
+
+    .add-event-card .eventDetails span,
+    .event-boxes .eventDetails span {
+        font-size: .8rem;
+    }
+
     .event {
         overflow: scroll;
     }
@@ -3472,6 +3646,7 @@ select.eventCalender {
     .event-box-left {
         width: 100% !important;
         overflow-y: initial;
+        height: auto;
     }
 
     .event-box-right {
@@ -3492,7 +3667,7 @@ select.eventCalender {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        justify-content: center;
+        justify-content: space-around;
         padding-bottom: 20px;
     }
 
@@ -3508,15 +3683,45 @@ select.eventCalender {
     }
 
     .add-event-box {
-        width: 96% !important;
+        width: 91% !important;
         padding-bottom: 0 !important;
+    }
+
+    #search {
+        width: 25%;
+        padding: 4.5px;
+    }
+}
+
+@media (max-width:850px) {
+    .add-event-card .eventShowCard {
+        height: 378px !important;
+        width: 208px !important;
+    }
+}
+
+@media (max-width:706px) {
+    .add-event-card .eventShowCard {
+        height: 364px !important;
+        width: 262px !important;
+    }
+}
+
+@media (max-width:581px) {
+    .add-event-card .eventShowCard {
+        height: 364px !important;
+        width: 221px !important;
+    }
+
+    .add-event-box {
+        width: 99% !important;
     }
 }
 
 @media (max-width:515px) {
     .add-event-card .eventShowCard {
         height: 357px !important;
-        width: 221px !important;
+        width: 218px !important;
     }
 
     .header-logo video {
@@ -3530,8 +3735,8 @@ select.eventCalender {
     }
 
     .event-boxes .eventShowCard {
-        height: 368px !important;
-        width: 213px !important;
+        height: 356px !important;
+        width: 188px !important;
     }
 }
 
@@ -3556,12 +3761,31 @@ select.eventCalender {
         width: 198px !important;
     }
 
+    .add-event-card #eventPic,
+    .event-boxes #eventPic {
+        height: 85px !important;
+    }
+
+    .add-event-card .eventDetails span,
+    .event-boxes .eventDetails span {
+        font-size: .7rem !important;
+    }
+
 }
 
 @media (max-width:421px) {
     .add-event-card .eventShowCard {
-        height: 368px !important;
+        height: 357px !important;
         width: 190px !important;
+    }
+
+    .event-boxes .eventShowCard {
+        height: 363px !important;
+        width: 177px !important;
+    }
+
+    .event-boxes #eventPic {
+        height: 73px !important;
     }
 }
 
@@ -3569,6 +3793,15 @@ select.eventCalender {
     .add-event-card .eventShowCard {
         height: 368px !important;
         width: 272px !important;
+    }
+
+    .event-boxes .eventShowCard {
+        height: 351px !important;
+        width: 275px !important;
+    }
+
+    .event-boxes #eventPic {
+        height: 85px !important;
     }
 }
 
@@ -3683,7 +3916,6 @@ select.eventCalender {
         width: 100%;
         flex-direction: row-reverse;
         position: static;
-
     }
 
     .right {
@@ -3695,7 +3927,6 @@ select.eventCalender {
     .container .edit-profile div#loader {
         height: 84px;
         width: 63px;
-
     }
 
     .container video {
@@ -3728,6 +3959,29 @@ select.eventCalender {
     .eventShowCard {
         height: 330px;
         width: 206px;
+    }
+
+    .create-profile {
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .create-profile .left {
+        height: 100vh;
+        width: 82%;
+        flex-direction: column;
+    }
+
+    .create-profile div#loader {
+        height: 131px;
+        margin-top: 20px;
+    }
+
+    .create-profile .right {
+        width: 100%;
+        overflow-y: scroll;
+        position: initial;
+        height: 100vh;
     }
 }
 
@@ -3927,13 +4181,27 @@ select.eventCalender {
         padding: 20px;
         min-height: 100vh;
     }
+    .create-profile .left {
+        width: 44%;
+    }
+    .create-profile video {
+        width: 264px;
+    }
+    .create-profile div#loader {
+        height: 106px;
+        margin-top: 20px;
+    }
+    .create-profile div#loader {
+        height: 106px;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width:641px) {
     .upcoming-calender .location {
         top: 219px;
-        right: 105px;
     }
+
 }
 
 @media screen and (max-width: 615px) {
@@ -3950,6 +4218,25 @@ select.eventCalender {
     .filters {
         display: flex;
         flex-direction: column;
+    }
+    .create-profile {
+        flex-direction: column;
+    }
+    .create-profile  .right_box1 {
+        margin-bottom: 97px;
+    }
+    .create-profile .left {
+        height: 16vh;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    .create-profile div#loader {
+        height: 78px;
+        margin-top: 0;
+        width: 94px;
+    }
+    .create-profile .right {
+        height: 100vh;
     }
 }
 
@@ -3968,11 +4255,12 @@ select.eventCalender {
         bottom: 123px;
     }
 }
+
 @media (max-width:490px) {
     .upcoming-calender .profile-image {
         top: 99px;
     }
-    
+
 }
 
 @media screen and (max-width: 456px) {
@@ -3985,9 +4273,11 @@ select.eventCalender {
         box-shadow: 1px 1px 10px #c99819;
         margin: 0 auto;
     }
+
     .eventDetails span {
         font-size: .7rem;
     }
+
     .session {
         font-size: 1rem;
         color: #C99819;
@@ -4001,31 +4291,57 @@ select.eventCalender {
         color: #9B9494;
         padding: 5px 0;
     }
+
     .upcoming-calender .profile_name {
         bottom: 96px;
     }
+
     .upcoming-calender .main-details {
         top: 134px;
     }
+
     .upcoming-calender .name-style {
         font-size: .86rem;
     }
+
     .upcoming-calender .box-details h3 {
         font-size: .8rem;
     }
+
     .upcoming-calender .box-details {
         width: 172%;
     }
+
     .upcoming-calender .location {
         top: 201px;
         right: 42px;
         width: 40%;
     }
+
     .upcoming-calender .profile_left {
         width: 100%;
         align-items: flex-start;
         padding: 20px;
         min-height: 89vh;
+    }
+    .create-profile video {
+        width: 217px;
+    }
+    .create-profile div#loader {
+        height: 61px;
+        margin-top: 0;
+        width: 86px;
+    }
+    .create-profile .left {
+        height: 13vh;
+    }
+}
+@media (max-width:390px) {
+    .upcoming-calender #btn-active {
+        top: 204px;
+    }
+    .upcoming-calender .profile_name {
+        bottom: 52px;
     }
 }
 
@@ -4121,10 +4437,6 @@ select.eventCalender {
     .container {
         height: 100vh;
         width: 100%;
-        display: flex;
-        overflow: hidden;
-        background-color: #000;
-        position: relative;
     }
 
     .edit-profile {
@@ -4212,7 +4524,6 @@ select.eventCalender {
     .right-box-left {
         height: 100%;
         width: 100%;
-        /* background-color: rgb(130, 137, 238); */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -4226,7 +4537,6 @@ select.eventCalender {
         padding: 0px;
         padding-right: 0px;
         position: relative;
-        /* right: 0; */
     }
 
     .main-input button,

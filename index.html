@@ -455,16 +455,16 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
-    integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-    
+        integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
     <script>
-         var loader = document.getElementById('loader')
+        var loader = document.getElementById('loader')
         var loader = bodymovin.loadAnimation({
             container: loader, // required
             path: '1234.json',
@@ -473,30 +473,6 @@
             autoplay: true,
             name: "Demo Animation",
         });
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
-                    $('#imagePreview').hide();
-                    $('#imagePreview').fadeIn(650);
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        $("#imageUpload").change(function () {
-            readURL(this);
-        });
-        var addEvent= document.getElementById('addEvent')
-        var event = document.getElementById('event')
-            addEvent.addEventListener('click', ()=>{
-                document.getElementById('notification').style.display = 'flex'
-                // event.style.opacity = '.5'
-            })
-        var cut = document.getElementById('cut')
-        cut.addEventListener('click', ()=>{
-            document.getElementById('notification').style.display = 'none'
-        })
     </script>
 </body>
 
