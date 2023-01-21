@@ -13,9 +13,10 @@
 <body>
     <div class="container" id="container">
         <div class="left edit-profile edit-left">
-            <img src="imgs/main.png" alt="" class="img1">
-            <!-- <div class="loader" id="loader"></div> -->
-            <!-- <img src="imgs/main1.png" alt="" class="img2"> -->
+            <video autoplay playsinline muted>
+                <source src="vid.mp4" type="video/mp4" />
+            </video>
+            <div class="loader" id="loader"></div>
         </div>
 
         <div class="right edit-profile-right" id="right_section">
@@ -23,7 +24,7 @@
                 <a href="" id="back-btn"><i class='bx bx-chevron-left'></i></a>
                 <a href="" id="logout"><i class='bx bx-log-out'></i></a>
             </div>
-            <form action="">
+            <form action="" class="form">
                 <div class="edit-right-box">
                     <div class="right-box-left">
                         <div class="content-box1">
@@ -1422,7 +1423,7 @@
             </form>
         </div>
     </div>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
         integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -1430,11 +1431,16 @@
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-    <script src="js/script.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        var loader = document.getElementById('loader')
+        var loader = bodymovin.loadAnimation({
+            container: loader, // required
+            path: '1234.json',
+            renderer: 'svg',
+            loop: false,
+            autoplay: true,
+            name: "Demo Animation",
+        });
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();

@@ -5,56 +5,466 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combat Domain</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container" id="container">
-        <div class="left">
-            <video autoplay playsinline muted>
-                <source src="vid.mp4" type="video/mp4" />
-            </video>
-            <div class="loader" id="loader"></div>
+    <div class="event" id="event">
+        <div class="event-header">
+            <div class="header-logo">
+                <div class="loader" id="loader"></div>
+                <video autoplay playsinline muted>
+                    <source src="vid.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="edit-profile showHeader">
+                <a href="Create Profile.html" id="complete-profile">Sign Up</a>
+                <a href="" id="edit-profile">Sign In</a>
+            </div>
+        </div>
+        <div class="event-box">
+            <div class="event-box-left">
+                <h2>Event Calender</h2>
+                <div class="calenderDate">
+                    <div class="selectOption">
+                        <select class="months eventCalender">
+                            <option value="">October</option>
+                        </select>
+                        <select class="year eventCalender">
+                            <option value="">2022</option>
+                        </select>
+                    </div>
+                    <div class="showDate">
+                        <div class="month">
+                            <div class="week">
+                                <div class="day">1</div>
+                                <div class="day">2</div>
+                                <div class="day">3</div>
+                                <div class="day">4</div>
+                            </div>
+                            <div class="week">
+                                <div class="day">5</div>
+                                <div class="day">6</div>
+                                <div class="day">7</div>
+                                <div class="day">8</div>
+                                <div class="day">9</div>
+                                <div class="day">10</div>
+                                <div class="day">11</div>
+                            </div>
+                            <div class="week">
+                                <div class="day">12</div>
+                                <div class="day">13</div>
+                                <div class="day">14</div>
+                                <div class="day">15</div>
+                                <div class="day">16</div>
+                                <div class="day">17</div>
+                                <div class="day">18</div>
+                            </div>
+                            <div class="week">
+                                <div class="day">19</div>
+                                <div class="day">20</div>
+                                <div class="day">21</div>
+                                <div class="day">22</div>
+                                <div class="day">23</div>
+                                <div class="day">24</div>
+                                <div class="day">25</div>
+                            </div>
+                            <div class="week">
+                                <div class="day">26</div>
+                                <div class="day">27</div>
+                                <div class="day">28</div>
+                                <div class="day">29</div>
+                                <div class="day">30</div>
+                                <div class="day">31</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-event-box">
+                    <div class="add-line1">
+                        <p>Events on 23 October/2021</p>
+                    </div>
+                    <div class="add-event-card">
+                        <div class="eventShowCard">
+                            <div class="dateEvent">23/Oct/2021</div>
+                            <img src="imgs/img1.png" alt="" id="eventPic">
+                            <p class="session">Sunday Sessions</p>
+                            <div class="eventDetails">
+                                <span>Discipline:K1,MT</span><br>
+                                <span>Sanctioning Body: WKN, WMAF</span><br>
+                                <span>Address: Auckland, Ellerslie</span><br>
+                                <span>Medics Name: Fiona Nesbitt</span>
+                            </div>
+                            <img src="imgs/Line2.png" alt="">
+                            <div class="eventDetails">
+                                <span>Host: Jason Suttie</span><br>
+                                <span>Mob: 987373943</span>
+                                <button id="edit">Edit</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                        </div>
+                        <div class="eventShowCard">
+                            <div class="dateEvent">23/Oct/2021</div>
+                            <img src="imgs/img1.png" alt="" id="eventPic">
+                            <p class="session">Sunday Sessions</p>
+                            <div class="eventDetails">
+                                <span>Discipline:K1,MT</span><br>
+                                <span>Sanctioning Body: WKN, WMAF</span><br>
+                                <span>Address: Auckland, Ellerslie</span><br>
+                                <span>Medics Name: Fiona Nesbitt</span>
+                            </div>
+                            <img src="imgs/Line2.png" alt="">
+                            <div class="eventDetails">
+                                <span>Host: Jason Suttie</span><br>
+                                <span>Mob: 987373943</span>
+                                <button id="edit">Edit</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                        </div>
+                        <div class="eventShowCard">
+                            <div class="dateEvent">23/Oct/2021</div>
+                            <img src="imgs/img1.png" alt="" id="eventPic">
+                            <p class="session">Sunday Sessions</p>
+                            <div class="eventDetails">
+                                <span>Discipline:K1,MT</span><br>
+                                <span>Sanctioning Body: WKN, WMAF</span><br>
+                                <span>Address: Auckland, Ellerslie</span><br>
+                                <span>Medics Name: Fiona Nesbitt</span>
+                            </div>
+                            <img src="imgs/Line2.png" alt="">
+                            <div class="eventDetails">
+                                <span>Host: Jason Suttie</span><br>
+                                <span>Mob: 987373943</span>
+                                <button id="edit">Edit</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                        </div>
+                        <div class="eventShowCard">
+                            <div class="dateEvent">23/Oct/2021</div>
+                            <img src="imgs/img1.png" alt="" id="eventPic">
+                            <p class="session">Sunday Sessions</p>
+                            <div class="eventDetails">
+                                <span>Discipline:K1,MT</span><br>
+                                <span>Sanctioning Body: WKN, WMAF</span><br>
+                                <span>Address: Auckland, Ellerslie</span><br>
+                                <span>Medics Name: Fiona Nesbitt</span>
+                            </div>
+                            <img src="imgs/Line2.png" alt="">
+                            <div class="eventDetails">
+                                <span>Host: Jason Suttie</span><br>
+                                <span>Mob: 987373943</span>
+                                <button id="edit">Edit</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                        </div>
+                        <div class="eventShowCard">
+                            <div class="dateEvent">23/Oct/2021</div>
+                            <img src="imgs/img1.png" alt="" id="eventPic">
+                            <p class="session">Sunday Sessions</p>
+                            <div class="eventDetails">
+                                <span>Discipline:K1,MT</span><br>
+                                <span>Sanctioning Body: WKN, WMAF</span><br>
+                                <span>Address: Auckland, Ellerslie</span><br>
+                                <span>Medics Name: Fiona Nesbitt</span>
+                            </div>
+                            <img src="imgs/Line2.png" alt="">
+                            <div class="eventDetails">
+                                <span>Host: Jason Suttie</span><br>
+                                <span>Mob: 987373943</span>
+                                <button id="edit">Edit</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                        </div>
+                        <div class="eventShowCard">
+                            <div class="dateEvent">23/Oct/2021</div>
+                            <img src="imgs/img1.png" alt="" id="eventPic">
+                            <p class="session">Sunday Sessions</p>
+                            <div class="eventDetails">
+                                <span>Discipline:K1,MT</span><br>
+                                <span>Sanctioning Body: WKN, WMAF</span><br>
+                                <span>Address: Auckland, Ellerslie</span><br>
+                                <span>Medics Name: Fiona Nesbitt</span>
+                            </div>
+                            <img src="imgs/Line2.png" alt="">
+                            <div class="eventDetails">
+                                <span>Host: Jason Suttie</span><br>
+                                <span>Mob: 987373943</span>
+                                <button id="edit">Edit</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                        </div>
+                        <div class="eventShowCard">
+                            <div class="dateEvent">23/Oct/2021</div>
+                            <img src="imgs/img1.png" alt="" id="eventPic">
+                            <p class="session">Sunday Sessions</p>
+                            <div class="eventDetails">
+                                <span>Discipline:K1,MT</span><br>
+                                <span>Sanctioning Body: WKN, WMAF</span><br>
+                                <span>Address: Auckland, Ellerslie</span><br>
+                                <span>Medics Name: Fiona Nesbitt</span>
+                            </div>
+                            <img src="imgs/Line2.png" alt="">
+                            <div class="eventDetails">
+                                <span>Host: Jason Suttie</span><br>
+                                <span>Mob: 987373943</span>
+                                <button id="edit">Edit</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                        </div>
+                        <div class="eventShowCard">
+                            <div class="dateEvent">23/Oct/2021</div>
+                            <img src="imgs/img1.png" alt="" id="eventPic">
+                            <p class="session">Sunday Sessions</p>
+                            <div class="eventDetails">
+                                <span>Discipline:K1,MT</span><br>
+                                <span>Sanctioning Body: WKN, WMAF</span><br>
+                                <span>Address: Auckland, Ellerslie</span><br>
+                                <span>Medics Name: Fiona Nesbitt</span>
+                            </div>
+                            <img src="imgs/Line2.png" alt="">
+                            <div class="eventDetails">
+                                <span>Host: Jason Suttie</span><br>
+                                <span>Mob: 987373943</span>
+                                <button id="edit">Edit</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                        </div>
+                        <div class="eventShowCard">
+                            <div class="dateEvent">23/Oct/2021</div>
+                            <img src="imgs/img1.png" alt="" id="eventPic">
+                            <p class="session">Sunday Sessions</p>
+                            <div class="eventDetails">
+                                <span>Discipline:K1,MT</span><br>
+                                <span>Sanctioning Body: WKN, WMAF</span><br>
+                                <span>Address: Auckland, Ellerslie</span><br>
+                                <span>Medics Name: Fiona Nesbitt</span>
+                            </div>
+                            <img src="imgs/Line2.png" alt="">
+                            <div class="eventDetails">
+                                <span>Host: Jason Suttie</span><br>
+                                <span>Mob: 987373943</span>
+                                <button id="edit">Edit</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-box-right">
+                <h2>Upcoming Events</h2>
+                <div class="main-header headerLine list-header">
+                    <select name="" id="">
+                        <option value="">Date</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Month</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Year</option>
+                    </select>
+                    <input type="search" name="" id="search" placeholder="Search By Event Name">
+                </div>
+                <div class="main-header headerLine list-header">
+                    <select name="" id="">
+                        <option value="">City</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Suburb</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Country</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Discipline</option>
+                    </select>
+                </div>
+                <div class="event-boxes">
+                    <div class="eventShowCard">
+                        <div class="dateEvent">23/Oct/2021</div>
+                        <img src="imgs/img1.png" alt="" id="eventPic">
+                        <p class="session">Sunday Sessions</p>
+                        <div class="eventDetails">
+                            <span>Discipline:K1,MT</span><br>
+                            <span>Sanctioning Body: WKN, WMAF</span><br>
+                            <span>Address: Auckland, Ellerslie</span><br>
+                            <span>Medics Name: Fiona Nesbitt</span>
+                        </div>
+                        <img src="imgs/Line2.png" alt="">
+                        <div class="eventDetails">
+                            <span>Host: Jason Suttie</span><br>
+                            <span>Mob: 987373943</span>
+                            <button id="edit">Edit</button>
+                            <button id="delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="eventShowCard">
+                        <div class="dateEvent">23/Oct/2021</div>
+                        <img src="imgs/img1.png" alt="" id="eventPic">
+                        <p class="session">Sunday Sessions</p>
+                        <div class="eventDetails">
+                            <span>Discipline:K1,MT</span><br>
+                            <span>Sanctioning Body: WKN, WMAF</span><br>
+                            <span>Address: Auckland, Ellerslie</span><br>
+                            <span>Medics Name: Fiona Nesbitt</span>
+                        </div>
+                        <img src="imgs/Line2.png" alt="">
+                        <div class="eventDetails">
+                            <span>Host: Jason Suttie</span><br>
+                            <span>Mob: 987373943</span>
+                            <button id="edit">Edit</button>
+                            <button id="delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="eventShowCard">
+                        <div class="dateEvent">23/Oct/2021</div>
+                        <img src="imgs/img1.png" alt="" id="eventPic">
+                        <p class="session">Sunday Sessions</p>
+                        <div class="eventDetails">
+                            <span>Discipline:K1,MT</span><br>
+                            <span>Sanctioning Body: WKN, WMAF</span><br>
+                            <span>Address: Auckland, Ellerslie</span><br>
+                            <span>Medics Name: Fiona Nesbitt</span>
+                        </div>
+                        <img src="imgs/Line2.png" alt="">
+                        <div class="eventDetails">
+                            <span>Host: Jason Suttie</span><br>
+                            <span>Mob: 987373943</span>
+                            <button id="edit">Edit</button>
+                            <button id="delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="eventShowCard">
+                        <div class="dateEvent">23/Oct/2021</div>
+                        <img src="imgs/img1.png" alt="" id="eventPic">
+                        <p class="session">Sunday Sessions</p>
+                        <div class="eventDetails">
+                            <span>Discipline:K1,MT</span><br>
+                            <span>Sanctioning Body: WKN, WMAF</span><br>
+                            <span>Address: Auckland, Ellerslie</span><br>
+                            <span>Medics Name: Fiona Nesbitt</span>
+                        </div>
+                        <img src="imgs/Line2.png" alt="">
+                        <div class="eventDetails">
+                            <span>Host: Jason Suttie</span><br>
+                            <span>Mob: 987373943</span>
+                            <button id="edit">Edit</button>
+                            <button id="delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="eventShowCard">
+                        <div class="dateEvent">23/Oct/2021</div>
+                        <img src="imgs/img1.png" alt="" id="eventPic">
+                        <p class="session">Sunday Sessions</p>
+                        <div class="eventDetails">
+                            <span>Discipline:K1,MT</span><br>
+                            <span>Sanctioning Body: WKN, WMAF</span><br>
+                            <span>Address: Auckland, Ellerslie</span><br>
+                            <span>Medics Name: Fiona Nesbitt</span>
+                        </div>
+                        <img src="imgs/Line2.png" alt="">
+                        <div class="eventDetails">
+                            <span>Host: Jason Suttie</span><br>
+                            <span>Mob: 987373943</span>
+                            <button id="edit">Edit</button>
+                            <button id="delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="eventShowCard">
+                        <div class="dateEvent">23/Oct/2021</div>
+                        <img src="imgs/img1.png" alt="" id="eventPic">
+                        <p class="session">Sunday Sessions</p>
+                        <div class="eventDetails">
+                            <span>Discipline:K1,MT</span><br>
+                            <span>Sanctioning Body: WKN, WMAF</span><br>
+                            <span>Address: Auckland, Ellerslie</span><br>
+                            <span>Medics Name: Fiona Nesbitt</span>
+                        </div>
+                        <img src="imgs/Line2.png" alt="">
+                        <div class="eventDetails">
+                            <span>Host: Jason Suttie</span><br>
+                            <span>Mob: 987373943</span>
+                            <button id="edit">Edit</button>
+                            <button id="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="right right_section" id="right_section">
-            <div class="right_box">
-                <div class="select_box">
-                    <h2>What is your role?</h2>
-
-                    <div class="select select_option">
-                        <select id="list" class="list" required>
-                            <option value="" disabled selected id="disable_option">Select your role</option>
-                            <option value="promoter">Promoter</option>
-                            <option value="medics">Medics</option>
-                            <option value="fighter" id="fighter">Fighter</option>
-                            <option value="sanctioning">Sanctioning</option>
-                            <option value="owner">GYM Owner</option>
-                            <option value="coach">Coach/Trainer</option>
-                        </select>
-                        <span id="select_value"></span>
+        <div class="notification" id="notification">
+            <div class="notification-box">
+                <div class="notify-line1">
+                    <p>Add Event on 23 October/2021</p>
+                    <i class='bx bx-x' id="cut"></i>
+                </div>
+                <form action="">
+                    <div class="form-box1">
+                        <div class="form-left-box">
+                            <label for="">Event Banner</label>
+                            <div class="avatar-upload">
+                                <div class="avatar-edit">
+                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                    <label for="imageUpload">Upload</label>
+                                </div>
+                                <div class="avatar-preview">
+                                    <div id="imagePreview" style="background-image: url('imgs/img1.png');">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-right-box">
+                            <label for="">Event Name</label>
+                            <input type="text">
+                            <label for="">Discipline</label>
+                            <input type="text">
+                            <label for="">Sanctioning</label>
+                            <input type="text">
+                            <label for="">Medics Name</label>
+                            <input type="text">
+                        </div>
                     </div>
-                    <a href="" id="changePage"><button id="next_btn" class="next_btn">Next</button></a>
-                </div>
-                <div class="signUp_btn">
-                    <span>Already Register ? <a href="">Sign up Now</a></span>
-                </div>
+                    <div class="form-line2">
+                        <div class="inputs">
+                            <label for="">Address</label>
+                            <input type="text">
+                        </div>
+                        <div class="inputs">
+                            <label for="">Suburb</label>
+                            <input type="text">
+                        </div>
+                        <div class="inputs">
+                            <label for="">Host</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form-line3">
+                        <div class="inputs">
+                            <label for="">Mobile No</label>
+                            <input type="tel" max="10">
+                        </div>
+                        <!-- <div class="inputs">
+                            <label for="">Mobile No</label>
+                            <input type="tel" max="10">
+                        </div> -->
+                        <input type="submit" id="notify-btn" value="Add Event">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
-        integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-    <script src="js/script.js"></script>
+    integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    
     <script>
-        var loader = document.getElementById('loader')
+         var loader = document.getElementById('loader')
         var loader = bodymovin.loadAnimation({
             container: loader, // required
             path: '1234.json',
@@ -63,6 +473,30 @@
             autoplay: true,
             name: "Demo Animation",
         });
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+        var addEvent= document.getElementById('addEvent')
+        var event = document.getElementById('event')
+            addEvent.addEventListener('click', ()=>{
+                document.getElementById('notification').style.display = 'flex'
+                // event.style.opacity = '.5'
+            })
+        var cut = document.getElementById('cut')
+        cut.addEventListener('click', ()=>{
+            document.getElementById('notification').style.display = 'none'
+        })
     </script>
 </body>
 
