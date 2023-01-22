@@ -1377,7 +1377,7 @@
                                     <span class="other-btn"><i class='bx bx-plus'></i></span>
                                 </div>
                                 <div class="record-entry entries1" id="record-entry-box">
-                                    
+
                                 </div>
                             </div>
 
@@ -2206,19 +2206,27 @@
             console.log('hello');
         })
 
-        var retired = document.getElementById('retired')
-        var active = document.getElementById('active')
-        var showColor = document.getElementsByClassName('color')
-        var changecolor = document.getElementById('colorChanger')
+        // var retired = document.getElementById('retired')
+        // var active = document.getElementById('active')
+        // var showColor = document.getElementsByClassName('color')
+        // active.addEventListener('click', ()=>{
+        // })
+        function func() {
+            var changecolor = document.getElementById('colorChanger')
+            changecolor.classList.toggle("activeColors");
+            console.log('ffff');
 
-        active.addEventListener('click', ()=>{
-            changecolor.style.backgroundColor = '#B42025'
-            active.style.backgroundColor = '#3FA707'
-            active.innerHTML = 'Active'
-            retired.style.backgroundColor = '#968A8A'
-            retired.innerHTML = 'Retired'
+        }
 
-        })
+        // active.addEventListener('click', ()=>{
+        //     changecolor.style.backgroundColor = '#B42025'
+        //     // active.style.backgroundColor = '#3FA707'
+        //     active.innerHTML = 'Active'
+        //     retired.style.backgroundColor = '#968A8A'
+        //     retired.innerHTML = 'Retired'
+        //     active.classList.toggle('activeColor')
+
+        // })
         // retired.addEventListener('click', ()=>{
         //     changecolor.style.backgroundColor = '#968A8A'
         //     retired.style.backgroundColor = '#3FA707'
@@ -2226,6 +2234,40 @@
         //     active.style.backgroundColor = '#B42025'
         //     active.innerHTML = 'In-active'
         // })
+        // $("#active").click(function () {
+        //     $("#colorChanger").toggle("#activeColor");
+        // });
+        // $("#active").click(function () {
+        //     $("#colorChanger").toggleClass('activeColors');
+        //     $("#active").toggleClass('activeColors')
+        // });
+        $(document).ready(function () {
+            $("#active").click(function () {
+                $('#colorChanger').toggleClass('activeColor1')
+                $('#colorChanger').removeClass('activeColor2')
+                $(this).toggleClass("change1");
+                $('#retired').removeClass('change2')
+                $('#retired').text('Retired')
+                if ($(this).text() == "In-active") {
+                    $(this).text("Active");
+                } else {
+                    $(this).text("In-active");
+                };
+            });
+            $("#retired").click(function () {
+                $("#colorChanger").toggleClass("activeColor2");
+                $("#colorChanger").removeClass("activeColor1");
+                $(this).toggleClass("change2");
+                $('#active').removeClass('change1')
+                $('#active').text('In-active')
+                if ($(this).text() == "Retired") {
+                    $(this).text("Active");
+                } else {
+                    $(this).text("Retired");
+                };
+            });
+        });
+
     </script>
 </body>
 
