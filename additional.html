@@ -11,7 +11,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <!-- copy paste -->
+    <div class="container create-profile">
+    <!-- copy paste -->
         <div class="left">
             <video autoplay playsinline muted>
                 <source src="vid.mp4" type="video/mp4" />
@@ -83,12 +85,15 @@
                         <div class="input">
                             <div class="radios_btn">
                                 <input type="checkbox" name="" id="" class="checkbox" required>
-                                <label for="">Your information on this platform is to find a suitable & fair match for you & your opponent, by ticking checkbox you are stating that all the information above is true?</label>
+                                <label for="">Your information on this platform is to find a suitable & fair match for
+                                    you & your opponent, by ticking checkbox you are stating that all the information
+                                    above is true?</label>
                             </div><br>
                             <div class="radios_btn">
                                 <input type="checkbox" name="" id="" class="checkbox" required>
-                                
-                                <label for="">I have read and I accept the <a href="privacy.html">Privacy policy</a></label>
+
+                                <label for="">I have read and I accept the <a href="privacy.html">Privacy
+                                        policy</a></label>
                             </div>
                         </div>
                         <div class="input">
@@ -117,30 +122,30 @@
             autoplay: true,
             name: "Demo Animation",
         });
-        function changefunc(){
+        function changefunc() {
             var weight = document.getElementById('weight').value;
             var weightInput = document.getElementById('weight_input').value;
-            
-            if(weight == 'kg'){
-                
+
+            if (weight == 'kg') {
+
                 var lbs = weightInput * 2.20462262185;
-                console.log(weightInput,"kg" + "|" + lbs, "lbs");
+                console.log(weightInput, "kg" + "|" + lbs, "lbs");
             }
-            else if(weight == 'lbs'){
+            else if (weight == 'lbs') {
                 var kg = Math.round(weightInput * 0.45359237);
-                console.log(weightInput,'lbs'+ "|" + kg, "kg");
+                console.log(weightInput, 'lbs' + "|" + kg, "kg");
             }
         }
-        function changefunc1(){
+        function changefunc1() {
             var height = document.getElementById('height').value;
             var heightInput = document.getElementById('height_input').value;
-            if(height == 'ft'){
+            if (height == 'ft') {
                 var cm = heightInput * 30.48;
-                console.log(heightInput,"ft" + "|" + cm, "cm");
+                console.log(heightInput, "ft" + "|" + cm, "cm");
             }
-            else if(height == 'cm'){
+            else if (height == 'cm') {
                 var ft = Math.round(heightInput * 0.0328084);
-                console.log(heightInput,'cm' + "|" + ft, "ft");
+                console.log(heightInput, 'cm' + "|" + ft, "ft");
             }
         }
     </script>

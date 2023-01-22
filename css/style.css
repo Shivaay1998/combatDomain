@@ -90,11 +90,15 @@ div#loader {
     right: 0;
 }
 
+.create-profile .right {
+    margin-top: 2%;
+}
+
 .right_box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15%;
+    margin-bottom: 9%;
     width: 74%;
 }
 
@@ -250,6 +254,7 @@ form {
 .first_right .edit-img {
     margin-top: 10px;
 }
+
 .create-profile .first_right .edit-img {
     margin-top: 0;
 }
@@ -259,15 +264,19 @@ form {
     height: 140px;
     background: #fff;
 }
+
 .create-profile .first_right .avatar-upload .avatar-preview {
     height: 163px;
 }
-.create-profile .first_left .input:nth-child(2){
+
+.create-profile .first_left .input:nth-child(2) {
     margin-top: 40px;
 }
+
 .input {
     margin: 10px 0;
 }
+
 .first_right .avatar-upload .avatar-edit {
     position: absolute;
     right: 7px;
@@ -563,6 +572,12 @@ input[type="radio"] {
     }
 }
 
+@media (max-width:1000px) {
+    .additional_right_box {
+        margin-top: 33px;
+    }
+}
+
 @media (max-width:930px) {
     .left {
         display: flex;
@@ -618,9 +633,13 @@ input[type="radio"] {
     }
 
     .create-profile .right_box {
-        margin-bottom: 0;
+        margin-bottom: 15px;
         width: 86%;
         margin-top: 0;
+    }
+
+    .create-profile .right-box1 {
+        margin-bottom: 138px;
     }
 
     .signUp_btn span {
@@ -762,18 +781,25 @@ input[type="radio"] {
     .right_box {
         margin-top: 0;
     }
+    .additional_right_box {
+        margin-bottom: 23px !important;
+        margin-top: 113px !important;
+    }
 }
 
 @media (max-width:700px) {
     .first_right .avatar-upload .avatar-preview {
         height: 140px;
     }
-    
+
 }
 
 @media (max-width:600px) {
     .links {
         width: 100%;
+    }
+    .select_box {
+        align-items: flex-start !important;
     }
 
     form {
@@ -793,6 +819,7 @@ input[type="radio"] {
         height: 47%;
     }
 }
+
 @media (max-width:520px) {
 
     .one,
@@ -830,12 +857,15 @@ input[type="radio"] {
     div#loader {
         height: 123px;
     }
+
     .first_left {
         width: 61%;
     }
+
     .first_right {
         width: 35%;
     }
+
     .create-profile .first_right .avatar-upload .avatar-preview {
         height: 148px;
     }
@@ -844,6 +874,10 @@ input[type="radio"] {
 @media (max-width:400px) {
     .left {
         height: 28%;
+    }
+    .additional_right_box {
+        margin-bottom: 7px !important;
+        margin-top: 134px !important;
     }
 }
 
@@ -964,6 +998,7 @@ input[type="radio"] {
     justify-content: end;
     width: 27%;
 }
+
 .z-header .edit-profile {
     width: auto;
 }
@@ -1614,12 +1649,14 @@ a#back-btn {
 .add button {
     background-color: #000;
     font-size: 2rem;
-    padding: 0 7px;
+    padding: 0 29px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .add span {
@@ -1729,6 +1766,7 @@ li {
     gap: 5px;
     justify-content: center;
     width: 90%;
+    margin-top: 8px;
 }
 
 .discipline-line input {
@@ -1744,6 +1782,7 @@ li {
     border: 1px solid #fff;
     color: #fff;
     cursor: pointer;
+    
 }
 
 .discipline-box {
@@ -2027,7 +2066,9 @@ li {
     .right-box-right {
         width: 24%;
     }
-    .avatar-upload .avatar-preview, .avatar-upload1 .avatar-preview1 {
+
+    .avatar-upload .avatar-preview,
+    .avatar-upload1 .avatar-preview1 {
         width: 100%;
         height: 205px;
         position: relative;
@@ -2301,7 +2342,9 @@ li {
         border-radius: 8px;
         z-index: 99999;
     }
-    .avatar-upload .avatar-preview, .avatar-upload1 .avatar-preview1 {
+
+    .avatar-upload .avatar-preview,
+    .avatar-upload1 .avatar-preview1 {
         width: 100%;
         height: 193px;
         position: relative;
@@ -2362,11 +2405,15 @@ li {
     .location {
         width: 46%;
     }
-    .avatar-upload .avatar-preview, .avatar-upload1 .avatar-preview1 {
+
+    .avatar-upload .avatar-preview,
+    .avatar-upload1 .avatar-preview1 {
         width: 100%;
         height: 174px;
     }
-    .avatar-upload .avatar-edit input+label, .avatar-upload1 .avatar-edit1 input+label {
+
+    .avatar-upload .avatar-edit input+label,
+    .avatar-upload1 .avatar-edit1 input+label {
         font-size: .8rem;
     }
 }
@@ -2443,21 +2490,27 @@ li {
         text-align: center;
         margin-top: 5px;
     }
+
     .profile_left.height-left p {
         padding: 8px !important;
     }
+
     .name-style {
         font-size: .8rem;
     }
+
     .box-details h3 {
         font-size: .9rem;
     }
+
     .name-style {
         padding-bottom: 0;
     }
+
     .line-heading {
         margin: 10px 0;
     }
+
     .profile_name {
         bottom: 76px;
         right: -241px;
@@ -2492,41 +2545,50 @@ li {
     .box-details {
         width: 134%;
     }
+
     .profile_left {
         min-height: 64vh;
     }
 }
+
 @media (max-width:425px) {
     .profile_name .name {
         font-size: .8rem;
     }
+
     .profile_name .fighter-name {
         font-size: .8rem;
     }
 }
+
 @media (max-width:390px) {
     .profile-image {
         width: 152px;
         top: 85px;
     }
+
     #btn-active {
         left: 94px;
         top: 192px;
         padding: 8px;
         font-size: .65rem;
     }
+
     .profile_name {
         bottom: 16px;
         right: -198px;
         width: 125%;
     }
+
     #btn-active {
         left: 94px;
         top: 192px;
     }
+
     .main-details {
         top: 93px;
     }
+
     .profile_left {
         min-height: 60vh;
     }
@@ -4181,16 +4243,20 @@ select.eventCalender {
         padding: 20px;
         min-height: 100vh;
     }
+
     .create-profile .left {
         width: 44%;
     }
+
     .create-profile video {
         width: 264px;
     }
+
     .create-profile div#loader {
         height: 106px;
         margin-top: 20px;
     }
+
     .create-profile div#loader {
         height: 106px;
         margin-top: 20px;
@@ -4219,22 +4285,27 @@ select.eventCalender {
         display: flex;
         flex-direction: column;
     }
+
     .create-profile {
         flex-direction: column;
     }
-    .create-profile  .right_box1 {
+
+    .create-profile .right_box1 {
         margin-bottom: 97px;
     }
+
     .create-profile .left {
         height: 16vh;
         width: 100%;
         flex-direction: row-reverse;
     }
+
     .create-profile div#loader {
         height: 78px;
         margin-top: 0;
         width: 94px;
     }
+
     .create-profile .right {
         height: 100vh;
     }
@@ -4324,22 +4395,27 @@ select.eventCalender {
         padding: 20px;
         min-height: 89vh;
     }
+
     .create-profile video {
         width: 217px;
     }
+
     .create-profile div#loader {
         height: 61px;
         margin-top: 0;
         width: 86px;
     }
+
     .create-profile .left {
         height: 13vh;
     }
 }
+
 @media (max-width:390px) {
     .upcoming-calender #btn-active {
         top: 204px;
     }
+
     .upcoming-calender .profile_name {
         bottom: 52px;
     }
@@ -4757,4 +4833,27 @@ form.edit_profile {
 .filters button {
     background: transparent;
     border: none;
+}
+#hidden-box{
+    display: none;
+}
+.entries1{
+    display: block;
+    position: relative;
+}
+.remove4 {
+    position: absolute;
+    right: 36px;
+    top: 20px;
+    background-color: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+}
+.entries1 h2 {
+    color: #c99819;
+    font-size: 1.3rem;
+    padding: 10px 0;
+}
+#addOneBox{
+    margin-top: 10px;
 }
