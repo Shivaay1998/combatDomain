@@ -781,6 +781,7 @@ input[type="radio"] {
     .right_box {
         margin-top: 0;
     }
+
     .additional_right_box {
         margin-bottom: 23px !important;
         margin-top: 113px !important;
@@ -798,6 +799,7 @@ input[type="radio"] {
     .links {
         width: 100%;
     }
+
     .select_box {
         align-items: flex-start !important;
     }
@@ -875,6 +877,7 @@ input[type="radio"] {
     .left {
         height: 28%;
     }
+
     .additional_right_box {
         margin-bottom: 7px !important;
         margin-top: 134px !important;
@@ -1317,6 +1320,7 @@ input[type="radio"] {
     width: 50%;
     background-color: #222222;
     padding: 4px;
+    height: 100%;
 }
 
 .notification .line2 p {
@@ -1714,7 +1718,8 @@ a#back-btn {
     width: 90%;
 }
 
-.right-box-content span, .right-box-content .color {
+.right-box-content span,
+.right-box-content .color {
     width: 90%;
     text-align: center;
     padding: 8px;
@@ -1743,19 +1748,24 @@ i.bx.bx-x {
 #active {
     background-color: #B42025;
 }
-#active.change1{
+
+#active.change1 {
     background-color: #3FA707;
 }
+
 #retired {
     background-color: #968A8A;
 }
-#retired.change2{
+
+#retired.change2 {
     background-color: #3FA707;
 }
-.activeColor1{
+
+.activeColor1 {
     background-color: #B42025;
 }
-.activeColor2{
+
+.activeColor2 {
     background-color: #968A8A;
 }
 
@@ -1793,7 +1803,7 @@ li {
     border: 1px solid #fff;
     color: #fff;
     cursor: pointer;
-    
+
 }
 
 .discipline-box {
@@ -2165,6 +2175,7 @@ li {
         margin-top: 0 !important;
         flex-wrap: wrap;
     }
+    
 }
 
 @media (max-width:880px) {
@@ -2526,6 +2537,11 @@ li {
         bottom: 76px;
         right: -241px;
         width: 120%;
+    }
+    .profile .notification-box {
+        height: 100vh;
+        width: 100%;
+        border-radius: 0;
     }
 }
 
@@ -3043,6 +3059,7 @@ select.eventCalender {
     align-items: center;
     gap: 10px;
     position: relative;
+    margin-bottom: 5px;
 }
 
 .calender-box1-left,
@@ -3608,7 +3625,6 @@ select.eventCalender {
 @media (max-width:1260px) {
     .add-event-card .eventShowCard {
         width: 197px !important;
-        height: 389px !important;
     }
 
     .add-event-card .dateEvent,
@@ -3647,7 +3663,6 @@ select.eventCalender {
 
 @media (max-width:1130px) {
     .add-event-card .eventShowCard {
-        height: 376px !important;
         width: 196px !important;
     }
 
@@ -3659,7 +3674,8 @@ select.eventCalender {
         /* height: 380px !important; */
         width: 219px !important;
     }
-    .event-boxes{
+
+    .event-boxes {
         justify-content: center;
     }
 
@@ -3676,7 +3692,6 @@ select.eventCalender {
 
 @media (max-width:1030px) {
     .add-event-card .eventShowCard {
-        height: 346px !important;
         width: 214px !important;
     }
 
@@ -3692,6 +3707,9 @@ select.eventCalender {
     .add-event-card .session,
     .event-boxes .session {
         font-size: .9rem !important;
+    }
+    .profile .line1 p {
+        font-size: .9rem;
     }
 }
 
@@ -3735,7 +3753,6 @@ select.eventCalender {
     }
 
     .add-event-card .eventShowCard {
-        height: 357px !important;
         width: 250px !important;
     }
 
@@ -3767,25 +3784,25 @@ select.eventCalender {
         width: 25%;
         padding: 4.5px;
     }
+    .notification-box {
+        width: 74%;
+    }
 }
 
 @media (max-width:850px) {
     .add-event-card .eventShowCard {
-        height: 378px !important;
         width: 208px !important;
     }
 }
 
 @media (max-width:706px) {
     .add-event-card .eventShowCard {
-        height: 364px !important;
-        width: 262px !important;
+        width: 185px !important;
     }
 }
 
 @media (max-width:581px) {
     .add-event-card .eventShowCard {
-        height: 364px !important;
         width: 221px !important;
     }
 
@@ -3793,10 +3810,14 @@ select.eventCalender {
         width: 99% !important;
     }
 }
+@media (max-width:631px) {
+    .add-event-card .eventShowCard {
+    width: 212px !important;
+}
+}
 
 @media (max-width:515px) {
     .add-event-card .eventShowCard {
-        height: 357px !important;
         width: 218px !important;
     }
 
@@ -3811,7 +3832,6 @@ select.eventCalender {
     }
 
     .event-boxes .eventShowCard {
-        height: 356px !important;
         width: 188px !important;
     }
 }
@@ -3833,7 +3853,6 @@ select.eventCalender {
     }
 
     .add-event-card .eventShowCard {
-        height: 354px !important;
         width: 198px !important;
     }
 
@@ -3851,34 +3870,31 @@ select.eventCalender {
 
 @media (max-width:421px) {
     .add-event-card .eventShowCard {
-        height: 357px !important;
-        width: 190px !important;
-    }
-
-    .event-boxes .eventShowCard {
-        height: 363px !important;
-        width: 177px !important;
+        width: 169px !important;
     }
 
     .event-boxes #eventPic {
         height: 73px !important;
     }
+    
 }
 
 @media (max-width:390px) {
     .add-event-card .eventShowCard {
-        height: 368px !important;
-        width: 272px !important;
+        width: 164px !important;
     }
-
-    .event-boxes .eventShowCard {
-        height: 351px !important;
-        width: 275px !important;
-    }
+    .add-event-card .session{
+    font-size: .9rem !important;
+}
 
     .event-boxes #eventPic {
         height: 85px !important;
     }
+}
+@media (max-width:345px) {
+    .add-event-card .eventShowCard {
+    width: 261px !important;
+}
 }
 
 /* ******************************EVENT PAGE END********************************* */
@@ -4106,7 +4122,7 @@ select.eventCalender {
     }
 
     .eventShowCard {
-        height: 330px;
+        /* height: 330px; */
         width: 258px;
     }
 
@@ -4149,7 +4165,7 @@ select.eventCalender {
     }
 
     .eventShowCard {
-        height: 316px;
+        /* height: 316px; */
         width: 223px;
     }
 
@@ -4212,9 +4228,8 @@ select.eventCalender {
         font-size: .75rem;
     }
 
-    .eventShowCard {
-        height: 312px;
-        width: 186px;
+    .event-boxes .eventShowCard {
+        width: 205px !important;
     }
 }
 
@@ -4418,6 +4433,9 @@ select.eventCalender {
     .create-profile .left {
         height: 13vh;
     }
+    .event-boxes .eventShowCard {
+    width: 174px !important;
+}
 }
 
 @media (max-width:390px) {
@@ -4775,6 +4793,11 @@ select.eventCalender {
         font-size: 0.6rem;
     }
 }
+@media (max-width:390px) {
+    .event-boxes .eventShowCard {
+        width: 230px !important;
+    }
+}
 
 
 
@@ -4843,16 +4866,20 @@ form.edit_profile {
     background: transparent;
     border: none;
 }
-#hidden-box{
+
+#hidden-box {
     display: none;
 }
-.signin{
+
+.signin {
     justify-content: center;
 }
-.entries1{
+
+.entries1 {
     display: block;
     position: relative;
 }
+
 .remove4 {
     position: absolute;
     right: 36px;
@@ -4861,11 +4888,13 @@ form.edit_profile {
     padding: 0 !important;
     border: none !important;
 }
+
 .entries1 h2 {
     color: #c99819;
     font-size: 1.3rem;
     padding: 10px 0;
 }
-#addOneBox{
+
+#addOneBox {
     margin-top: 10px;
 }
