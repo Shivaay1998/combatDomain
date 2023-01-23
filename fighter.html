@@ -227,6 +227,7 @@
                 .val(year - i)     // set the value
                 .text(year - i)    // set the text in in the <option>
                 .appendTo($select_year);
+                console.log("");
         }
         var fname = document.getElementById("fname")
         var lname = document.getElementById("lname")
@@ -332,6 +333,9 @@
                 console.log($file)
             });
         })
+        var days = document.getElementById('select_day');
+        output = days.value;
+        console.log(output);
         // <!-- **********COPY PASTE************** -->
     </script>
 </body>
