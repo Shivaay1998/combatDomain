@@ -1579,6 +1579,7 @@ input[type="radio"] {
     display: -ms-flexbox;
     display: flex;
     overflow-y: scroll;
+    flex-direction: column;
 }
 
 .right-box-left {
@@ -5682,19 +5683,22 @@ select.eventCalender {
 
 .remove4 {
     position: absolute;
-    right: 36px;
-    top: 20px;
+    right: 7px;
+    top: 14px;
     background-color: transparent !important;
     padding: 0 !important;
     border: none !important;
 }
 
 .entries1 h2 {
-    color: #c99819;
+    color: #fff;
     font-size: 1.3rem;
     padding: 10px 0;
+    background: #c99819;
+    padding-left: 5px;
 }
 
 #addOneBox {
     margin-top: 10px;
+    position: relative;
 }
